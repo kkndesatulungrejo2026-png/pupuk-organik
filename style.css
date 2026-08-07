@@ -950,6 +950,6 @@ html, body{
 @media(max-width:768px){
     .tentang p,
     .artikel-detail p{
-        text-align:left;
+        text-align:justify;
     }
 }
