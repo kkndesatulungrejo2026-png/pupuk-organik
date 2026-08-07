@@ -892,4 +892,31 @@ footer h3{
     padding-left:5px;
 }
 
-<meta name="viewport" content="width=device-width, initial-scale=2.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+html, body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+.materi{
+    width:100%;
+    max-width:100%;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+
+.item{
+    width:100%;
+    box-sizing:border-box;
+}
+
+@media(max-width:768px){
+    section, .container, main{
+        width:100%;
+        max-width:100%;
+        padding:0 15px;
+        box-sizing:border-box;
+        margin:0 auto;
+    }
+}
