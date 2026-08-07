@@ -942,3 +942,9 @@ html, body{
         text-align:left !important;
     }
 }
+@media(max-width:768px){
+    .tentang p,
+    .artikel-detail p{
+        text-align:left;
+    }
+}
