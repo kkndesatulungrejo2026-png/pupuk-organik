@@ -75,7 +75,7 @@ nav a:hover{
     background:
     linear-gradient(rgba(68,73,48,.75),
     rgba(68,73,48,.75)),
-    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1600");
+    url("image/desa-tulungrejo.jpeg");
 
     background-size:cover;
     background-position:center;
@@ -759,4 +759,135 @@ footer h3{
 .btn-materi:hover{
     background:#5b6042;
     transform:translateY(-2px);
+}
+
+.social a{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:white;
+    font-size:16px;
+    margin:0 15px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social a i{
+    font-size:22px;
+}
+
+.social a:hover{
+    color:#22c55e;
+    transform:translateY(-3px);
+}
+.artikel-detail{
+    max-width:800px;
+    margin:60px auto;
+    background:#f9f6ef;
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.artikel-detail h1{
+    color:#444930;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.artikel-detail h2{
+    color:#444930;
+    font-size:24px;
+    margin-top:30px;
+    margin-bottom:12px;
+    border-left:5px solid #444930;
+    padding-left:12px;
+}
+
+.artikel-detail p{
+    line-height:1.9;
+    color:#555;
+    text-align:justify;
+    margin-bottom:15px;
+}
+
+.artikel-detail ul{
+    padding-left:25px;
+    margin-bottom:10px;
+}
+
+.artikel-detail ul li{
+    line-height:1.9;
+    color:#555;
+    margin-bottom:6px;
+}
+
+.btn-kembali{
+    display:inline-block;
+    margin-top:30px;
+    color:#444930;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-kembali:hover{
+    color:#5d6242;
+    padding-left:5px;
+}
+
+.artikel-detail{
+    max-width:800px;
+    margin:60px auto;
+    background:#f9f6ef;
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.artikel-detail h1{
+    color:#444930;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.artikel-detail h2{
+    color:#444930;
+    font-size:24px;
+    margin-top:30px;
+    margin-bottom:12px;
+    border-left:5px solid #444930;
+    padding-left:12px;
+}
+
+.artikel-detail p{
+    line-height:1.9;
+    color:#555;
+    text-align:justify;
+    margin-bottom:15px;
+}
+
+.artikel-detail ul{
+    padding-left:25px;
+    margin-bottom:10px;
+}
+
+.artikel-detail ul li{
+    line-height:1.9;
+    color:#555;
+    margin-bottom:6px;
+}
+
+.btn-kembali{
+    display:inline-block;
+    margin-top:30px;
+    color:#444930;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-kembali:hover{
+    color:#5d6242;
+    padding-left:5px;
 }
