@@ -920,3 +920,19 @@ html, body{
         margin:0 auto;
     }
 }
+@media(max-width:768px){
+    section, .container, main{
+        width:100%;
+        max-width:100%;
+        padding:0 15px;
+        box-sizing:border-box;
+        margin:0 auto;
+    }
+}
+
+@media(max-width:768px){
+    .tentang p,
+    .artikel-detail p{
+        text-align:left;
+    }
+}
