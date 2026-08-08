@@ -656,7 +656,7 @@ footer h3 {
 .kontak-info a {
     display: flex;
 
-    align-items: flex-center;
+    align-items: flex-start;
 
     justify-content: center;
 
@@ -1443,7 +1443,7 @@ footer h3 {
 .kontak-info a {
     display: inline-flex;
 
-    align-items: flex-starts;
+    align-items: flex-start;
 
     justify-content: center;
 
