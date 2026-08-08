@@ -4,19 +4,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const nav = document.getElementById("nav");
 
     if (!menuToggle || !nav) {
+        console.error("Hamburger atau nav tidak ditemukan!");
         return;
     }
 
-    // Buka / tutup menu saat hamburger diklik
+    // Klik hamburger
     menuToggle.addEventListener("click", function (e) {
+        e.preventDefault();
         e.stopPropagation();
+
         nav.classList.toggle("active");
     });
 
-    // Tutup menu saat salah satu menu diklik
-    const navLinks = nav.querySelectorAll("a");
-
-    navLinks.forEach(function (link) {
+    // Klik link menu → tutup menu
+    nav.querySelectorAll("a").forEach(function (link) {
 
         link.addEventListener("click", function () {
             nav.classList.remove("active");
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    // Tutup menu jika klik di luar menu
+    // Klik di luar menu → tutup menu
     document.addEventListener("click", function (e) {
 
         if (
