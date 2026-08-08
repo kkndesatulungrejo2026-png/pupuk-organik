@@ -7,12 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    // Buka / tutup hamburger
-    menuToggle.addEventListener("click", function () {
+    // Buka / tutup menu saat hamburger diklik
+    menuToggle.addEventListener("click", function (e) {
+        e.stopPropagation();
         nav.classList.toggle("active");
     });
 
-    // Otomatis tutup setelah memilih menu
+    // Tutup menu saat salah satu menu diklik
     const navLinks = nav.querySelectorAll("a");
 
     navLinks.forEach(function (link) {
@@ -20,6 +21,19 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("click", function () {
             nav.classList.remove("active");
         });
+
+    });
+
+    // Tutup menu jika klik di luar menu
+    document.addEventListener("click", function (e) {
+
+        if (
+            nav.classList.contains("active") &&
+            !nav.contains(e.target) &&
+            !menuToggle.contains(e.target)
+        ) {
+            nav.classList.remove("active");
+        }
 
     });
 
