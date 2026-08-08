@@ -1276,3 +1276,71 @@ footer h3 {
         font-size: 13px;
     }
 }
+/* =========================
+   HAMBURGER MENU
+========================= */
+
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   TAMPILAN HP
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: #444930;
+
+        flex-direction: column;
+
+        padding: 10px 0;
+
+        z-index: 9999;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+
+        padding: 15px 20px;
+
+        text-align: center;
+
+        color: white;
+        text-decoration: none;
+
+        box-sizing: border-box;
+    }
+
+    nav a:hover {
+        background: rgba(255,255,255,0.1);
+    }
+
+}
