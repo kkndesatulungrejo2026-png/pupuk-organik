@@ -999,28 +999,6 @@ footer h3 {
     }
 }
 
-
-/* ==================================================
-   RESPONSIVE - HP KECIL
-================================================== */
-
-@media (max-width: 480px) {
-
-    /* ---------- HEADER ---------- */
-
-    header {
-        padding: 14px 5%;
-    }
-
-    .logo {
-        font-size: 22px;
-    }
-
-    .menu-toggle {
-        font-size: 25px;
-    }
-
-
     /* ---------- HERO ---------- */
 
     .hero {
