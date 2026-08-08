@@ -17,6 +17,15 @@ navLinks.forEach(function (link) {
     });
 });
 
+// TUTUP MENU KALAU KLIK DI LUAR NAV
+document.addEventListener('click', function (e) {
+    const isClickInsideNav = nav.contains(e.target);
+    const isClickOnToggle = menuToggle.contains(e.target);
+
+    if (!isClickInsideNav && !isClickOnToggle && nav.classList.contains('active')) {
+        nav.classList.remove('active');
+    }
+});
 
 // ===============================
 // SCROLL KE ARTIKEL
