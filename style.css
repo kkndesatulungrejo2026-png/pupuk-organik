@@ -1367,92 +1367,111 @@ footer h3 {
 
 
     /* =====================================================
-       FOOTER HP
-    ===================================================== */
+   FOOTER HP
+===================================================== */
 
-    footer {
-        padding: 40px 20px;
+footer {
+    padding: 40px 15px;
+    margin-top: 50px;
+}
 
-        margin-top: 50px;
-    }
-
-    footer h3 {
-        font-size: 24px;
-
-        line-height: 1.4;
-    }
+footer h3 {
+    font-size: 23px;
+    line-height: 1.4;
+}
 
 
-    /* SOSMED HP */
+/* SOSMED TETAP SEJAJAR */
 
-    .social {
-        display: flex;
+.social {
+    display: flex;
 
-        flex-direction: column;
+    flex-direction: row;
 
-        gap: 18px;
+    justify-content: center;
 
-        margin: 30px 0 35px;
-    }
+    align-items: center;
 
-    .social a {
-        width: auto;
+    flex-wrap: wrap;
 
-        margin: 0;
+    gap: 22px;
 
-        font-size: 17px;
+    margin: 30px 0 35px;
+}
 
-        gap: 10px;
-    }
+.social a {
+    display: inline-flex;
 
-    .social a i {
-        font-size: 25px;
-    }
+    align-items: center;
 
+    gap: 7px;
 
-    /* KONTAK HP */
+    margin: 0;
 
-    .kontak-info {
-        font-size: 15px;
+    font-size: 16px;
+}
 
-        gap: 18px;
-
-        width: 100%;
-    }
-
-    .kontak-info a {
-        width: 100%;
-
-        max-width: 400px;
-
-        font-size: 15px;
-
-        line-height: 1.6;
-
-        text-align: left;
-
-        justify-content: flex-start;
-
-        overflow-wrap: anywhere;
-    }
-
-    .kontak-info i {
-        font-size: 21px;
-
-        width: 28px;
-    }
+.social a i {
+    font-size: 23px;
+}
 
 
-    /* COPYRIGHT HP */
+/* LOKASI + EMAIL */
 
-    .copyright {
-        font-size: 13px;
+.kontak-info {
+    display: flex;
 
-        line-height: 1.6;
+    flex-direction: row;
 
-        margin-top: 30px;
-    }
+    justify-content: center;
 
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    font-size: 14px;
+}
+
+.kontak-info a {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: auto;
+
+    max-width: 100%;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    text-align: center;
+
+    overflow-wrap: anywhere;
+}
+
+.kontak-info i {
+    font-size: 20px;
+
+    width: auto;
+
+    flex-shrink: 0;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    margin-top: 30px;
+}
 
     /* -------------------------
        BACK TO TOP
