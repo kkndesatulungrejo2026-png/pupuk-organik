@@ -1,1157 +1,1279 @@
-
 /* ===========================
    GOOGLE FONT
 =========================== */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-html, body{
-    overflow-x:hidden;
-    max-width:100%;
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
 }
 
-body{
-    background:#d3cbb6;
-    color:#444930;
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
 }
+
+body {
+    background: #d3cbb6;
+    color: #444930;
+}
+
 
 /* ===========================
    HEADER
 =========================== */
 
-header{
-    width:100%;
-    background:#444930;
-    color:#fff;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 3px 10px rgba(0,0,0,.15);
+header {
+    width: 100%;
+    background: #444930;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
 }
 
-.logo{
-    font-size:28px;
-    font-weight:bold;
+.logo {
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.logo i{
-    margin-right:8px;
+.logo i {
+    margin-right: 8px;
 }
 
-nav{
-    display:flex;
-    gap:25px;
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+nav {
+    display: flex;
+    gap: 25px;
 }
 
-nav a{
-    color:#fff;
-    text-decoration:none;
-    font-weight:500;
-    transition:.3s;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
 }
 
-nav a:hover{
-    color:#d3cbb6;
+nav a:hover {
+    color: #d3cbb6;
 }
 
-.menu-toggle{
-    display:none;
-    font-size:28px;
-    cursor:pointer;
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
+
 
 /* ===========================
    HERO
 =========================== */
 
-.hero{
-    min-height:85vh;
+.hero {
+    min-height: 85vh;
+
     background:
-    linear-gradient(rgba(68,73,48,.75),
-    rgba(68,73,48,.75)),
-    url("image/desa-tulungrejo.jpeg");
+        linear-gradient(
+            rgba(68, 73, 48, .75),
+            rgba(68, 73, 48, .75)
+        ),
+        url("image/desa-tulungrejo.jpeg");
 
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
 }
 
-.hero h1{
-    font-size:55px;
-    margin-bottom:20px;
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
 }
 
-.hero p{
-    max-width:700px;
-    margin:auto;
-    font-size:20px;
-    line-height:1.8;
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.8;
 }
 
-.hero button{
-    background:#d3cbb6;
-    color:#444930;
-    border:none;
-    padding:15px 35px;
-    border-radius:50px;
-    font-weight:bold;
-    transition:.3s;
+.hero button {
+    background: #d3cbb6;
+    color: #444930;
+    border: none;
+
+    padding: 15px 35px;
+    border-radius: 50px;
+
+    font-weight: bold;
+    transition: .3s;
 }
 
-.hero button:hover{
-    background:#444930;
-    color:white;
+.hero button:hover {
+    background: #444930;
+    color: white;
 }
+
+
 /* ===========================
    SEARCH
 =========================== */
 
-.search-box{
-    padding:40px;
-    text-align:center;
+.search-box {
+    padding: 40px;
+    text-align: center;
 }
 
-.search-box input{
-    width:70%;
-    max-width:700px;
-    padding:16px;
-    border:2px solid #444930;
-    border-radius:40px;
-    background:#fffaf2;
-    outline:none;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
-    font-size:16px;
+.search-box input {
+    width: 70%;
+    max-width: 700px;
+
+    padding: 16px;
+
+    border: 2px solid #444930;
+    border-radius: 40px;
+
+    background: #fffaf2;
+    outline: none;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+
+    font-size: 16px;
 }
+
 
 /* ===========================
    ARTIKEL
 =========================== */
 
-.artikel{
-    width:90%;
-    margin:auto;
-    padding:30px 0;
+.artikel {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
 }
 
-.artikel h2{
-    text-align:center;
-    font-size:36px;
-    margin-bottom:40px;
-   color:#444930;
+.artikel h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #444930;
 }
 
-.artikel-grid{
-
-    display:grid;
+.artikel-grid {
+    display: grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(300px,1fr));
+        repeat(auto-fit, minmax(300px, 1fr));
 
-    gap:30px;
-
+    gap: 30px;
 }
 
-.card{
+.card {
+    background: #f9f6ef;
 
-    background:#f9f6ef;
-    border-radius:15px;
-    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    border-radius: 15px;
 
-    overflow:hidden;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, .1);
 
+    overflow: hidden;
 
-    transition:.4s;
-
+    transition: .4s;
 }
 
-.card:hover{
-
-    transform:translateY(-10px);
-
+.card:hover {
+    transform: translateY(-10px);
 }
 
-.card img{
-
-    width:100%;
-
-    height:220px;
-
-    object-fit:cover;
-
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
-.content{
-
-    padding:20px;
-
+.content {
+    padding: 20px;
 }
 
-.kategori{
+.kategori {
+    display: inline-block;
 
-    display:inline-block;
+    background: #444930;
+    color: white;
 
-    background:#444930;
-    color:white;
+    padding: 5px 15px;
 
-    padding:5px 15px;
+    border-radius: 20px;
 
-    border-radius:20px;
-
-    font-size:13px;
-
-    margin-bottom:12px;
-
+    font-size: 13px;
+    margin-bottom: 12px;
 }
 
-.content h3{
-
-    margin-bottom:15px;
-
+.content h3 {
+    margin-bottom: 15px;
 }
 
-.content p{
-
-    line-height:1.8;
-
-    color:#555;
-
+.content p {
+    line-height: 1.8;
+    color: #555;
 }
 
-.content button{
+.content button {
+    margin-top: 20px;
 
-    margin-top:20px;
+    background: #444930;
+    color: white;
 
-    background:#444930;
-    color:white;
+    border: none;
 
-    border:none;
+    padding: 12px 25px;
 
-    padding:12px 25px;
+    border-radius: 30px;
 
-    border-radius:30px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
+    cursor: pointer;
+    transition: .3s;
 }
 
-.content button:hover{
-
-    background:#5d6242;
-
+.content button:hover {
+    background: #5d6242;
 }
+
 
 /* ===========================
-   TENTANG
+   BUTTON ARTIKEL
 =========================== */
 
-.tentang{
+.btn-artikel {
+    display: inline-block;
 
-    margin-top:80px;
+    margin-top: 20px;
 
-    background:#f9f6ef;
+    background: #444930;
+    color: white;
 
-    padding:60px 10%;
+    text-decoration: none;
 
-    text-align:center;
+    padding: 12px 30px;
 
+    border-radius: 40px;
+
+    transition: .3s;
+    font-weight: 600;
 }
 
-.tentang h2{
-
-    color:#2563eb;
-
-    margin-bottom:20px;
-
+.btn-artikel:hover {
+    background: #5f6542;
 }
 
-.tentang p{
-
-    max-width:900px;
-
-    margin:auto;
-
-    line-height:1.9;
-
-}
 
 /* ===========================
-   FOOTER
+   TENTANG WEBSITE
 =========================== */
 
-footer{
+.tentang {
+    background: #ffffff;
 
-    margin-top:80px;
+    width: 90%;
 
-    background:#444930;
-    color:white;
+    margin: 70px auto;
 
-    text-align:center;
+    padding: 50px;
 
-    padding:50px;
+    border-radius: 20px;
 
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .1);
+
+    text-align: center;
 }
 
-footer h3{
+.tentang h2 {
+    color: #444930;
 
-    margin-bottom:15px;
+    font-size: 35px;
 
+    margin-bottom: 25px;
 }
 
-.social{
+.tentang p {
+    font-size: 17px;
 
-    margin:25px 0;
+    line-height: 2;
 
+    color: #555;
+
+    margin-bottom: 20px;
+
+    /* KANAN-KIRI RATA */
+    text-align: justify;
 }
 
-.social i{
-
-    margin:10px;
-
-    font-size:25px;
-
-    cursor:pointer;
-
-    transition:.3s;
-    color:white;
-}
-
-.social i:hover{
-
-    color:#d3cbb6;
-
-    transform:scale(1.2);
-
-}
-
-/* ===========================
-   BACK TO TOP
-=========================== */
-
-#topBtn{
-
-    position:fixed;
-
-    right:25px;
-
-    bottom:25px;
-
-    width:50px;
-
-    height:50px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#444930;
-    color:white;
-
-    font-size:22px;
-
-    cursor:pointer;
-
-    display:none;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
-
-}
-
-#topBtn:hover{
-
-     background:#5d6242;
-
-}
-
-/* ===========================
-   DARK MODE
-=========================== */
-
-.dark{
-
-    background:#111827;
-
-    color:white;
-
-}
-
-.dark .card{
-
-    background:#1f2937;
-
-    color:white;
-
-}
-
-.dark .tentang{
-
-    background:#1f2937;
-
-}
-
-.dark .search-box input{
-
-    background:#374151;
-
-    color:white;
-
-}
-
-/* ===========================
-   RESPONSIVE
-=========================== */
-
-@media(max-width:768px){
-
-    nav{
-
-        display:none;
-
-        position:absolute;
-
-        top:75px;
-
-        left:0;
-
-        width:100%;
-
-        background:#2563eb;
-
-        flex-direction:column;
-
-        text-align:center;
-
-        padding:20px;
-
-    }
-
-    nav.active{
-
-        display:flex;
-
-    }
-
-    .menu-toggle{
-
-        display:block;
-
-    }
-
-    .hero h1{
-
-        font-size:38px;
-
-    }
-
-    .hero p{
-
-        font-size:17px;
-
-    }
-
-    .search-box input{
-
-        width:90%;
-
-    }
-
-
-    
-}@media(max-width:768px){
-
-    nav{
-        display:none;
-        position:absolute;
-        top:75px;
-        left:0;
-        width:100%;
-        background:#2563eb;
-        flex-direction:column;
-        text-align:center;
-        padding:20px;
-    }
-
-    nav.active{
-        display:flex;
-    }
-
-    .menu-toggle{
-        display:block;
-    }
-
-    .hero h1{
-        font-size:38px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .search-box input{
-        width:90%;
-    }
-
-}   /* <-- Tutup @media di sini */
-
-/* ===========================
-   BUTTON PELAJARI LEBIH LANJUT
-=========================== */
-
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:15px 40px;
-    background:white;
-    color:#2563eb;
-    text-decoration:none;
-    border-radius:50px;
-    font-size:20px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#2563eb;
-    color:white;
-}
 
 /* ===========================
    SECTION TENTANG PUPUK
 =========================== */
 
-#tentang-pupuk{
-    width:90%;
-    margin:80px auto;
-    background:white;
-    padding:50px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
+#tentang-pupuk {
+    width: 90%;
+
+    margin: 80px auto;
+
+    background: white;
+
+    padding: 50px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, .15);
 }
 
-#tentang-pupuk h2{
-    color:#2563eb;
-    margin-bottom:20px;
+#tentang-pupuk h2 {
+    color: #2563eb;
+    margin-bottom: 20px;
 }
 
-#tentang-pupuk h3{
-    margin-top:30px;
-    color:#333;
+#tentang-pupuk h3 {
+    margin-top: 30px;
+    color: #333;
 }
 
-#tentang-pupuk p{
-    line-height:1.8;
+#tentang-pupuk p {
+    line-height: 1.8;
 }
 
-#tentang-pupuk ul{
-    margin-top:20px;
-    padding-left:25px;
+#tentang-pupuk ul {
+    margin-top: 20px;
+    padding-left: 25px;
 }
 
-#tentang-pupuk li{
-    margin:12px 0;
+#tentang-pupuk li {
+    margin: 12px 0;
 }
+
 
 /* ===========================
    MATERI
 =========================== */
 
-.materi{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:25px;
-    margin-top:40px;
+.materi {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 40px;
+
+    width: 100%;
+    max-width: 100%;
 }
 
-.item{
-    display:flex;
-    gap:20px;
-    align-items:flex-start;
-    background:#fff;
-    padding:25px;
-    border-radius:18px;
-    text-decoration:none;
-    color:#333;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
+.item {
+    display: flex;
+
+    gap: 20px;
+
+    align-items: flex-start;
+
+    background: #fff;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, .1);
+
+    transition: .3s;
+
+    width: 100%;
+
+    box-sizing: border-box;
 }
 
-.item:hover{
-    transform:translateY(-8px);
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
+.item:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .15);
 }
 
-.item span{
-    font-size:35px;
+.item span {
+    font-size: 35px;
+    flex-shrink: 0;
 }
 
-.item h4{
-    color:#444930;
-    margin-bottom:10px;
-    font-size:24px;
+.item h4 {
+    color: #444930;
+
+    margin-bottom: 10px;
+
+    font-size: 24px;
 }
 
-.item p{
-    color:#666;
-    line-height:1.7;
+.item p {
+    color: #555;
+
+    line-height: 1.7;
 }
 
-.social{
-    margin:30px 0;
+
+/* ===========================
+   BUTTON MATERI
+=========================== */
+
+.btn-materi {
+    margin-top: 18px;
+
+    background: #444930;
+    color: #fff;
+
+    padding: 10px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
 }
 
-.social a{
-    color:white;
-    font-size:35px;
-    margin:0 18px;
-    transition:.3s;
-    text-decoration:none;
+.btn-materi:hover {
+    background: #5b6042;
+
+    transform: translateY(-2px);
 }
 
-.social a:hover{
-    color:#22c55e;
-    transform:translateY(-5px);
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    margin-top: 80px;
+
+    background: #444930;
+    color: white;
+
+    text-align: center;
+
+    padding: 50px;
 }
 
-.kontak-info{
-    margin-top:25px;
-    line-height:2;
-    font-size:17px;
+footer h3 {
+    margin-bottom: 15px;
 }
 
-.kontak-info i{
-    color:#22c55e;
-    margin-right:10px;
+.social {
+    margin: 30px 0;
 }
 
-.copyright{
-    margin-top:30px;
-    font-size:15px;
-    opacity:.8;
-}
-.btn-artikel{
-    display:inline-block;
-    margin-top:20px;
-    background:#444930;
-    color:white;
-    text-decoration:none;
-    padding:12px 30px;
-    border-radius:30px;
-    transition:.3s;
-    font-weight:600;
+.social a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: white;
+
+    font-size: 16px;
+
+    margin: 0 15px;
+
+    text-decoration: none;
+
+    transition: .3s;
 }
 
-.btn-artikel:hover{
-    background:#5a6140;
+.social a i {
+    font-size: 22px;
 }
 
-.btn-artikel{
-    display:inline-block;
-    margin-top:20px;
-    background:#444930;
-    color:white;
-    padding:12px 30px;
-    border-radius:40px;
-    text-decoration:none;
-    transition:.3s;
+.social a:hover {
+    color: #22c55e;
+
+    transform: translateY(-3px);
 }
 
-.btn-artikel:hover{
-    background:#5f6542;
+.kontak-info {
+    margin-top: 25px;
+
+    line-height: 2;
+
+    font-size: 17px;
 }
 
-.item{
-    display:flex;
-    gap:20px;
-    background:#fff;
-    padding:25px;
-    border-radius:18px;
-    text-decoration:none;
-    color:#333;
-    transition:.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+.kontak-info i {
+    color: #22c55e;
+    margin-right: 10px;
 }
 
-.item:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+.copyright {
+    margin-top: 30px;
+
+    font-size: 15px;
+
+    opacity: .8;
 }
 
-.item h4{
-    color:#444930;
+
+/* ===========================
+   BACK TO TOP
+=========================== */
+
+#topBtn {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #444930;
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    display: none;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, .3);
 }
 
-.materi-card{
-    text-decoration:none;
-    color:inherit;
-    display:block;
+#topBtn:hover {
+    background: #5d6242;
 }
 
-.item{
-    background:#fff;
-    border-radius:18px;
-    padding:25px;
-    transition:.3s;
-    cursor:pointer;
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark {
+    background: #111827;
+    color: white;
 }
 
-.item:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+.dark .card {
+    background: #1f2937;
+    color: white;
 }
 
-.item h4{
-    color:#444930;
+.dark .tentang {
+    background: #1f2937;
 }
 
-.item p{
-    color:#555;
+.dark .search-box input {
+    background: #374151;
+    color: white;
 }
 
-.tentang{
-    background:#ffffff;
-    width:90%;
-    margin:70px auto;
-    padding:50px;
-    border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
-    text-align:center;
+
+/* ===========================
+   ARTIKEL DETAIL
+=========================== */
+
+.artikel-detail {
+    max-width: 800px;
+
+    margin: 60px auto;
+
+    background: #f9f6ef;
+
+    padding: 50px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .1);
 }
 
-.tentang h2{
-    color:#444930;
-    font-size:35px;
-    margin-bottom:25px;
+.artikel-detail h1 {
+    color: #444930;
+
+    font-size: 34px;
+
+    margin-bottom: 20px;
 }
 
-.tentang p{
-    font-size:17px;
-    line-height:2;
-    color:#555;
-    margin-bottom:20px;
-    text-align:justify;
+.artikel-detail h2 {
+    color: #444930;
+
+    font-size: 24px;
+
+    margin-top: 30px;
+    margin-bottom: 12px;
+
+    border-left: 5px solid #444930;
+
+    padding-left: 12px;
 }
 
-.btn-materi{
-    margin-top:18px;
-    background:#444930;
-    color:#fff;
-    padding:10px 22px;
-    border:none;
-    border-radius:8px;
-    font-size:15px;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.3s;
+.artikel-detail p {
+    line-height: 1.9;
+
+    color: #555;
+
+    text-align: justify;
+
+    margin-bottom: 15px;
 }
 
-.btn-materi:hover{
-    background:#5b6042;
-    transform:translateY(-2px);
+.artikel-detail ul {
+    padding-left: 25px;
+
+    margin-bottom: 10px;
 }
 
-.social a{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    color:white;
-    font-size:16px;
-    margin:0 15px;
-    text-decoration:none;
-    transition:.3s;
+.artikel-detail ul li {
+    line-height: 1.9;
+
+    color: #555;
+
+    margin-bottom: 6px;
 }
 
-.social a i{
-    font-size:22px;
+.btn-kembali {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    color: #444930;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: .3s;
 }
 
-.social a:hover{
-    color:#22c55e;
-    transform:translateY(-3px);
-}
-.artikel-detail{
-    max-width:800px;
-    margin:60px auto;
-    background:#f9f6ef;
-    padding:50px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
+.btn-kembali:hover {
+    color: #5d6242;
+
+    padding-left: 5px;
 }
 
-.artikel-detail h1{
-    color:#444930;
-    font-size:34px;
-    margin-bottom:20px;
+
+/* ===========================
+   BUTTON PELAJARI LEBIH LANJUT
+=========================== */
+
+.btn {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 40px;
+
+    background: white;
+    color: #2563eb;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    transition: .3s;
 }
 
-.artikel-detail h2{
-    color:#444930;
-    font-size:24px;
-    margin-top:30px;
-    margin-bottom:12px;
-    border-left:5px solid #444930;
-    padding-left:12px;
+.btn:hover {
+    background: #2563eb;
+    color: white;
 }
 
-.artikel-detail p{
-    line-height:1.9;
-    color:#555;
-    text-align:justify;
-    margin-bottom:15px;
-}
 
-.artikel-detail ul{
-    padding-left:25px;
-    margin-bottom:10px;
-}
-
-.artikel-detail ul li{
-    line-height:1.9;
-    color:#555;
-    margin-bottom:6px;
-}
-
-.btn-kembali{
-    display:inline-block;
-    margin-top:30px;
-    color:#444930;
-    font-weight:600;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.btn-kembali:hover{
-    color:#5d6242;
-    padding-left:5px;
-}
-
-.artikel-detail{
-    max-width:800px;
-    margin:60px auto;
-    background:#f9f6ef;
-    padding:50px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
-}
-
-.artikel-detail h1{
-    color:#444930;
-    font-size:34px;
-    margin-bottom:20px;
-}
-
-.artikel-detail h2{
-    color:#444930;
-    font-size:24px;
-    margin-top:30px;
-    margin-bottom:12px;
-    border-left:5px solid #444930;
-    padding-left:12px;
-}
-
-.artikel-detail p{
-    line-height:1.9;
-    color:#555;
-    text-align:justify;
-    margin-bottom:15px;
-}
-
-.artikel-detail ul{
-    padding-left:25px;
-    margin-bottom:10px;
-}
-
-.artikel-detail ul li{
-    line-height:1.9;
-    color:#555;
-    margin-bottom:6px;
-}
-
-.btn-kembali{
-    display:inline-block;
-    margin-top:30px;
-    color:#444930;
-    font-weight:600;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.btn-kembali:hover{
-    color:#5d6242;
-    padding-left:5px;
-}
-
-html, body{
-    overflow-x:hidden;
-    width:100%;
-}
-
-.materi{
-    width:100%;
-    max-width:100%;
-    padding:0 20px;
-    box-sizing:border-box;
-}
-
-.item{
-    width:100%;
-    box-sizing:border-box;
-}
-
-/* ============================= */
-/* RESPONSIVE MATERI DI HP */
-/* ============================= */
+/* ==================================================
+   RESPONSIVE - TABLET & HP
+================================================== */
 
 @media (max-width: 768px) {
 
-    #tentang-pupuk {
-        width: 100%;
-        padding: 30px 15px;
-        box-sizing: border-box;
+    /* ---------- HEADER ---------- */
+
+    header {
+        padding: 15px 5%;
     }
 
-    #tentang-pupuk h2,
-    #tentang-pupuk h3 {
-        text-align: center;
-    }
+    nav {
+        display: none;
 
-    .materi {
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
         width: 100%;
-        display: flex;
+
+        background: #444930;
+
         flex-direction: column;
-        align-items: center;
-        gap: 25px;
-        padding: 0;
-        margin: 0 auto;
-        box-sizing: border-box;
+
+        text-align: center;
+
+        padding: 20px;
+
+        gap: 15px;
     }
 
-    .materi .item {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 25px 20px;
-
+    nav.active {
         display: flex;
-        align-items: flex-start;
-
-        box-sizing: border-box;
-        border-radius: 25px;
     }
 
-    .materi .item > span {
-        flex-shrink: 0;
-        font-size: 32px;
-        margin-right: 18px;
+    .menu-toggle {
+        display: block;
     }
 
-    .materi .item h4 {
-        margin: 0 0 10px 0;
-        font-size: 22px;
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: 75vh;
+
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
         line-height: 1.3;
     }
 
-    .materi .item p {
-        margin: 0;
-        font-size: 16px;
+    .hero p {
+        font-size: 17px;
         line-height: 1.7;
     }
 
-}
 
+    /* ---------- SEARCH ---------- */
 
-/* ============================= */
-/* HP KECIL */
-/* ============================= */
-
-@media (max-width: 480px) {
-
-    #tentang-pupuk {
-        padding-left: 10px;
-        padding-right: 10px;
+    .search-box {
+        padding: 30px 15px;
     }
 
-    .materi .item {
-        max-width: 380px;
-        padding: 25px 18px;
+    .search-box input {
+        width: 90%;
     }
 
-    .materi .item > span {
-        font-size: 28px;
-        margin-right: 15px;
+
+    /* ---------- ARTIKEL ---------- */
+
+    .artikel {
+        width: calc(100% - 30px);
+
+        padding: 25px 0;
     }
 
-    .materi .item h4 {
-        font-size: 20px;
+    .artikel h2 {
+        font-size: 30px;
     }
 
-    .materi .item p {
-        font-size: 15px;
+    .artikel-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
     }
 
-}
-@media (max-width: 480px) {
+
+    /* ---------- TENTANG WEBSITE ---------- */
 
     .tentang {
         width: calc(100% - 30px);
-        max-width: 400px;
-        margin: 20px auto;
+
+        max-width: 500px;
+
+        margin: 40px auto;
+
         padding: 35px 25px;
+
         border-radius: 25px;
-        box-sizing: border-box;
+
+        text-align: center;
     }
 
     .tentang h2 {
         font-size: 30px;
+
         line-height: 1.3;
+
         margin-bottom: 25px;
+
         text-align: center;
     }
 
     .tentang p {
+        width: 100%;
+
         font-size: 16px;
+
         line-height: 1.8;
-        text-align: left;
+
         margin: 0;
+
+        /* PENTING: KANAN-KIRI RATA */
+        text-align: justify;
+
+        text-justify: inter-word;
+
+        overflow-wrap: break-word;
+
+        word-break: normal;
     }
 
-}
-/* =====================================
-   PERBAIKAN TENTANG PUPUK - HP
-   ===================================== */
 
-@media (max-width: 768px) {
+    /* ---------- TENTANG PUPUK ---------- */
 
     #tentang-pupuk {
         width: calc(100% - 30px);
+
         max-width: 500px;
-        margin: 25px auto;
+
+        margin: 40px auto;
+
         padding: 35px 25px;
-        box-sizing: border-box;
+
         border-radius: 25px;
+
+        box-sizing: border-box;
+
         overflow: visible;
     }
 
     #tentang-pupuk h2 {
         text-align: center;
+
         font-size: 30px;
+
         line-height: 1.3;
+
         margin-bottom: 25px;
     }
 
     #tentang-pupuk > p {
-        text-align: left;
+        text-align: justify;
+
         font-size: 16px;
+
         line-height: 1.8;
+
         margin-bottom: 35px;
-        word-spacing: normal;
-        letter-spacing: normal;
+
+        overflow-wrap: break-word;
+
+        word-break: normal;
     }
 
     #tentang-pupuk h3 {
         text-align: center;
+
         font-size: 22px;
+
         line-height: 1.4;
+
         margin-bottom: 30px;
     }
 
-    /* Card materi */
-    #tentang-pupuk .materi {
+
+    /* ---------- MATERI ---------- */
+
+    .materi {
         width: 100%;
+
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
+
         gap: 20px;
+
         margin: 0;
+
         padding: 0;
+
         box-sizing: border-box;
     }
 
-    #tentang-pupuk .materi .item {
+    .materi .item {
         width: 100%;
+
         max-width: 400px;
+
         margin: 0 auto;
+
         padding: 25px 20px;
-        box-sizing: border-box;
 
         display: flex;
+
         align-items: flex-start;
+
         gap: 15px;
+
+        box-sizing: border-box;
 
         border-radius: 22px;
     }
 
-    #tentang-pupuk .materi .item > span {
+    .materi .item > span {
         flex-shrink: 0;
+
         font-size: 30px;
     }
 
-    #tentang-pupuk .materi .item h4 {
+    .materi .item h4 {
         margin: 0 0 8px;
+
         font-size: 20px;
+
         line-height: 1.35;
     }
 
-    #tentang-pupuk .materi .item p {
+    .materi .item p {
         margin: 0;
+
         font-size: 15px;
+
         line-height: 1.6;
+
         text-align: left;
     }
 
+
+    /* ---------- ARTIKEL DETAIL ---------- */
+
+    .artikel-detail {
+        width: calc(100% - 30px);
+
+        margin: 30px auto;
+
+        padding: 30px 20px;
+
+        border-radius: 15px;
+    }
+
+    .artikel-detail h1 {
+        font-size: 28px;
+
+        line-height: 1.3;
+    }
+
+    .artikel-detail h2 {
+        font-size: 22px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        padding: 40px 20px;
+
+        margin-top: 50px;
+    }
+
+    .social a {
+        margin: 8px 10px;
+    }
+
+    .kontak-info {
+        font-size: 15px;
+    }
+
+
+    /* ---------- BACK TO TOP ---------- */
+
+    #topBtn {
+        right: 15px;
+
+        bottom: 15px;
+
+        width: 45px;
+        height: 45px;
+    }
 }
 
 
-/* =====================================
-   HP KECIL
-   ===================================== */
+/* ==================================================
+   RESPONSIVE - HP KECIL
+================================================== */
 
 @media (max-width: 480px) {
 
-    #tentang-pupuk {
-        width: calc(100% - 24px);
+    /* ---------- HEADER ---------- */
+
+    header {
+        padding: 14px 5%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .menu-toggle {
+        font-size: 25px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: 70vh;
+
+        padding: 35px 18px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    /* ---------- SEARCH ---------- */
+
+    .search-box {
+        padding: 25px 10px;
+    }
+
+    .search-box input {
+        width: 95%;
+
+        font-size: 14px;
+
+        padding: 14px;
+    }
+
+
+    /* ---------- ARTIKEL ---------- */
+
+    .artikel {
+        width: calc(100% - 20px);
+    }
+
+    .artikel h2 {
+        font-size: 27px;
+
+        margin-bottom: 30px;
+    }
+
+    .card {
+        border-radius: 18px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .content {
+        padding: 18px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+
+        line-height: 1.4;
+    }
+
+    .content p {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    /* ---------- TENTANG WEBSITE ---------- */
+
+    .tentang {
+        width: calc(100% - 20px);
+
+        max-width: 450px;
+
+        margin: 30px auto;
+
         padding: 30px 20px;
+
+        border-radius: 22px;
+    }
+
+    .tentang h2 {
+        font-size: 27px;
+
+        line-height: 1.3;
+
+        margin-bottom: 22px;
+    }
+
+    .tentang p {
+        font-size: 15px;
+
+        line-height: 1.8;
+
+        text-align: justify;
+
+        margin: 0;
+    }
+
+
+    /* ---------- TENTANG PUPUK ---------- */
+
+    #tentang-pupuk {
+        width: calc(100% - 20px);
+
+        max-width: 450px;
+
+        padding: 30px 20px;
+
+        margin: 30px auto;
+
+        border-radius: 22px;
     }
 
     #tentang-pupuk h2 {
-        font-size: 28px;
+        font-size: 27px;
     }
 
     #tentang-pupuk > p {
         font-size: 15px;
+
         line-height: 1.8;
+
+        text-align: justify;
     }
 
     #tentang-pupuk h3 {
         font-size: 20px;
     }
 
-    #tentang-pupuk .materi .item {
+
+    /* ---------- MATERI ---------- */
+
+    .materi .item {
+        max-width: 100%;
+
         padding: 22px 18px;
+
+        border-radius: 20px;
     }
 
-    #tentang-pupuk .materi .item h4 {
+    .materi .item > span {
+        font-size: 28px;
+    }
+
+    .materi .item h4 {
         font-size: 19px;
     }
 
-    #tentang-pupuk .materi .item p {
+    .materi .item p {
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+
+    /* ---------- BUTTON ---------- */
+
+    .btn {
+        font-size: 16px;
+
+        padding: 13px 28px;
+    }
+
+    .btn-artikel {
+        padding: 11px 22px;
+
         font-size: 14px;
     }
 
+
+    /* ---------- ARTIKEL DETAIL ---------- */
+
+    .artikel-detail {
+        width: calc(100% - 20px);
+
+        padding: 25px 18px;
+
+        margin: 25px auto;
+    }
+
+    .artikel-detail h1 {
+        font-size: 25px;
+    }
+
+    .artikel-detail h2 {
+        font-size: 20px;
+    }
+
+    .artikel-detail p {
+        font-size: 15px;
+
+        line-height: 1.8;
+
+        text-align: justify;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        padding: 35px 15px;
+    }
+
+    footer h3 {
+        font-size: 21px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
 }
