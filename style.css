@@ -1277,3 +1277,86 @@ footer h3 {
         font-size: 13px;
     }
 }
+
+/* =========================================
+   HAMBURGER MENU - FIX MOBILE
+========================================= */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 2000;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 2000;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: #444930;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 0;
+
+        padding: 15px 0;
+
+        box-shadow: 0 5px 15px rgba(0,0,0,.2);
+
+        z-index: 1500;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+
+        width: 100%;
+
+        padding: 15px 20px;
+
+        text-align: center;
+
+        color: white;
+
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background: #5d6242;
+        color: white;
+    }
+}
