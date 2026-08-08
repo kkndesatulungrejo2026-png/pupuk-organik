@@ -530,6 +530,7 @@ nav a:hover {
     padding: 10px 22px;
 
     border: none;
+
     border-radius: 8px;
 
     font-size: 15px;
@@ -539,16 +540,22 @@ nav a:hover {
 
     transition: .3s;
 
-    /* HILANGKAN GARIS BAWAH */
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .btn-materi:hover {
     background: #5b6042;
+
     transform: translateY(-2px);
 
-    /* Tetap tidak ada garis bawah saat disentuh */
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+a.btn-materi,
+a.btn-materi:visited,
+a.btn-materi:hover,
+a.btn-materi:active {
+    text-decoration: none !important;
 }
 
 
@@ -565,15 +572,32 @@ footer {
 
     text-align: center;
 
-    padding: 50px;
+    padding: 50px 20px;
 }
 
 footer h3 {
     margin-bottom: 15px;
+
+    font-size: 28px;
 }
 
+
+/* =========================================================
+   SOCIAL MEDIA
+========================================================= */
+
 .social {
-    margin: 30px 0;
+    margin: 35px 0 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
 }
 
 .social a {
@@ -581,45 +605,95 @@ footer h3 {
 
     align-items: center;
 
-    gap: 8px;
+    justify-content: center;
+
+    gap: 10px;
 
     color: white;
 
-    font-size: 16px;
+    font-size: 18px;
 
-    margin: 0 15px;
+    margin: 0 8px;
 
     text-decoration: none;
 
     transition: .3s;
+
+    cursor: pointer;
 }
 
 .social a i {
-    font-size: 22px;
+    font-size: 26px;
 }
 
 .social a:hover {
     color: #22c55e;
 
-    transform: translateY(-3px);
+    transform: translateY(-4px);
 }
+
+
+/* =========================================================
+   KONTAK / LOKASI / EMAIL
+========================================================= */
 
 .kontak-info {
     margin-top: 25px;
 
-    line-height: 2;
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+
+    line-height: 1.7;
 
     font-size: 17px;
+}
+
+.kontak-info a {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+    max-width: 100%;
+}
+
+.kontak-info a:hover {
+    color: #22c55e;
+
+    transform: translateY(-2px);
 }
 
 .kontak-info i {
     color: #22c55e;
 
-    margin-right: 10px;
+    font-size: 22px;
+
+    width: 28px;
+
+    flex-shrink: 0;
 }
 
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
 .copyright {
-    margin-top: 30px;
+    margin-top: 35px;
 
     font-size: 15px;
 
@@ -635,9 +709,11 @@ footer h3 {
     position: fixed;
 
     right: 25px;
+
     bottom: 25px;
 
     width: 50px;
+
     height: 50px;
 
     border: none;
@@ -801,7 +877,6 @@ footer h3 {
     .hero p {
         font-size: 17px;
     }
-
 }
 
 
@@ -867,6 +942,7 @@ footer h3 {
         justify-content: center;
 
         width: 45px;
+
         height: 45px;
 
         padding: 0;
@@ -919,7 +995,6 @@ footer h3 {
         display: flex;
     }
 
-
     header nav a {
         display: block;
 
@@ -937,7 +1012,7 @@ footer h3 {
     }
 
     header nav a:hover {
-        background: rgba(255,255,255,.1);
+        background: rgba(255, 255, 255, .1);
     }
 
 
@@ -1137,7 +1212,6 @@ footer h3 {
 
     /* =====================================================
        MATERI HP
-       INI BAGIAN PALING PENTING
     ===================================================== */
 
     .materi {
@@ -1155,7 +1229,6 @@ footer h3 {
 
         padding: 0;
     }
-
 
     .materi .item {
         width: 100%;
@@ -1177,7 +1250,6 @@ footer h3 {
         background: white;
     }
 
-
     .materi .item > span {
         flex-shrink: 0;
 
@@ -1188,13 +1260,11 @@ footer h3 {
         text-align: center;
     }
 
-
     .materi .item > div {
         flex: 1;
 
         min-width: 0;
     }
-
 
     .materi .item h4 {
         margin: 0 0 12px;
@@ -1205,7 +1275,6 @@ footer h3 {
 
         color: #444930;
     }
-
 
     .materi .item p {
         margin: 0;
@@ -1252,7 +1321,6 @@ footer h3 {
         cursor: pointer;
     }
 
-
     .materi .item .btn-materi:hover {
         background: #5b6042;
 
@@ -1298,9 +1366,9 @@ footer h3 {
     }
 
 
-    /* -------------------------
-       FOOTER
-    ------------------------- */
+    /* =====================================================
+       FOOTER HP
+    ===================================================== */
 
     footer {
         padding: 40px 20px;
@@ -1309,19 +1377,80 @@ footer h3 {
     }
 
     footer h3 {
-        font-size: 21px;
+        font-size: 24px;
+
+        line-height: 1.4;
+    }
+
+
+    /* SOSMED HP */
+
+    .social {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        margin: 30px 0 35px;
     }
 
     .social a {
-        margin: 8px 10px;
+        width: auto;
+
+        margin: 0;
+
+        font-size: 17px;
+
+        gap: 10px;
     }
+
+    .social a i {
+        font-size: 25px;
+    }
+
+
+    /* KONTAK HP */
 
     .kontak-info {
         font-size: 15px;
+
+        gap: 18px;
+
+        width: 100%;
     }
+
+    .kontak-info a {
+        width: 100%;
+
+        max-width: 400px;
+
+        font-size: 15px;
+
+        line-height: 1.6;
+
+        text-align: left;
+
+        justify-content: flex-start;
+
+        overflow-wrap: anywhere;
+    }
+
+    .kontak-info i {
+        font-size: 21px;
+
+        width: 28px;
+    }
+
+
+    /* COPYRIGHT HP */
 
     .copyright {
         font-size: 13px;
+
+        line-height: 1.6;
+
+        margin-top: 30px;
     }
 
 
@@ -1352,7 +1481,7 @@ footer h3 {
     }
 
 
-    /* LOGO SUPAYA TIDAK BERANTAKAN */
+    /* LOGO */
 
     .logo {
         font-size: 20px;
@@ -1505,11 +1634,44 @@ footer h3 {
 
         line-height: 1.8;
     }
+
+
+    /* FOOTER HP KECIL */
+
+    footer {
+        padding: 35px 15px;
+    }
+
+    footer h3 {
+        font-size: 22px;
+    }
+
+    .social a {
+        font-size: 16px;
+    }
+
+    .social a i {
+        font-size: 23px;
+    }
+
+    .kontak-info a {
+        font-size: 14px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
 }
+
+
+/* =========================================================
+   BUTTON MATERI - HILANGKAN GARIS BAWAH
+========================================================= */
 
 a.btn-materi,
 a.btn-materi:visited,
 a.btn-materi:hover,
-a.btn-materi:active {
+a.btn-materi:active,
+a.btn-materi:focus {
     text-decoration: none !important;
 }
