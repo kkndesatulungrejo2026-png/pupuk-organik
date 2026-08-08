@@ -1434,3 +1434,36 @@ footer h3 {
         margin-top: 15px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .artikel-detail {
+        width: calc(100% - 30px);
+
+        max-width: none;
+
+        margin: 25px auto;
+
+        padding: 25px 20px;
+
+        box-sizing: border-box;
+
+        border-radius: 18px;
+    }
+
+    .artikel-detail h1 {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    .artikel-detail h2 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .artikel-detail p,
+    .artikel-detail li {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
