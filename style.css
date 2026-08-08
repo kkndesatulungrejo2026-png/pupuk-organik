@@ -1228,52 +1228,7 @@ footer h3 {
         font-size: 24px;
     }
 
-    /* HAMBURGER */
-    .menu-toggle {
-        display: block;
-        background: transparent;
-        border: none;
-        color: white;
-        font-size: 32px;
-        cursor: pointer;
-        padding: 5px;
-        z-index: 10001;
-    }
-
-    /* MENU AWALNYA TERSEMBUNYI */
-    nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #444930;
-        flex-direction: column;
-        text-align: center;
-        padding: 10px 0;
-        gap: 0;
-        z-index: 10000;
-        box-shadow: 0 8px 15px rgba(0,0,0,.3);
-    }
-
-    /* SAAT HAMBURGER DIKLIK */
-    nav.active {
-        display: flex;
-    }
-
-    nav a {
-        display: block;
-        width: 100%;
-        padding: 15px 20px;
-        color: white;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    nav a:hover {
-        background: rgba(255,255,255,.1);
-    }
-
+   
     /* HERO */
     .hero {
         min-height: 75vh;
