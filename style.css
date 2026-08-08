@@ -1742,6 +1742,18 @@ footer .kontak-info a {
     text-decoration: none !important;
 }
 
+footer .kontak-info i {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 24px !important;      /* KUNCI: lebar box sama buat semua icon */
+    flex-shrink: 0 !important;
+
+    font-size: 20px !important;
+    margin-top: 2px !important;
+}
+
 
 /* HP */
 
