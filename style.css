@@ -1467,3 +1467,122 @@ footer h3 {
         line-height: 1.8;
     }
 }
+
+/* ==========================================
+   PERBAIKAN CARD MATERI DI HP
+========================================== */
+
+@media (max-width: 768px) {
+
+    .materi {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .materi .item {
+        width: 100%;
+        max-width: 500px;
+
+        display: flex;
+        align-items: flex-start;
+
+        gap: 18px;
+
+        padding: 25px 22px;
+
+        box-sizing: border-box;
+    }
+
+    .materi .item > span {
+        flex-shrink: 0;
+        font-size: 32px;
+    }
+
+    .materi .item > div {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .materi .item h4 {
+        margin: 0 0 12px;
+
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .materi .item p {
+        margin: 0 0 20px;
+
+        font-size: 16px;
+        line-height: 1.7;
+
+        text-align: left;
+    }
+
+    .materi .item .btn-materi {
+        display: inline-block;
+
+        margin-top: 5px;
+
+        padding: 11px 20px;
+
+        font-size: 14px;
+
+        line-height: 1.4;
+
+        white-space: nowrap;
+    }
+}
+
+
+/* ==========================================
+   HP KECIL
+========================================== */
+
+@media (max-width: 480px) {
+
+    .materi {
+        gap: 20px;
+    }
+
+    .materi .item {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 22px 18px;
+
+        gap: 15px;
+
+        border-radius: 20px;
+    }
+
+    .materi .item > span {
+        font-size: 28px;
+    }
+
+    .materi .item h4 {
+        font-size: 19px;
+
+        line-height: 1.4;
+
+        margin-bottom: 10px;
+    }
+
+    .materi .item p {
+        font-size: 14px;
+
+        line-height: 1.7;
+
+        margin-bottom: 18px;
+    }
+
+    .materi .item .btn-materi {
+        padding: 10px 16px;
+
+        font-size: 13px;
+    }
+
+}
