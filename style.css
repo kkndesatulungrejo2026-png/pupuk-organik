@@ -1722,11 +1722,13 @@ footer .social a i {
 
 footer .kontak-info {
     display: flex !important;
-    flex-direction: row !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
     justify-content: center !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    gap: 35px !important;
+    gap: 18px !important;
+    width: fit-content !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
 }
 
 footer .kontak-info a {
