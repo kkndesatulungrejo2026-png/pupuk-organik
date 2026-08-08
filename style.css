@@ -1738,12 +1738,13 @@ footer .kontak-info {
 footer .kontak-info a {
     display: inline-flex !important;
     flex-direction: row !important;
-    align-items: center !important;   /* ganti dari flex-start */
+    align-items: flex-start !important;   /* ganti dari flex-start */
     text-align: left !important;
     width: auto !important;
     margin: 0 !important;
-    gap: 10px !important;
+    gap: 12px !important;
     text-decoration: none !important;
+    line-height: 1.5 !important;
 }
 
 footer .kontak-info i {
@@ -1751,13 +1752,14 @@ footer .kontak-info i {
     align-items: center !important;
     justify-content: center !important;
     width: 24px !important;
+    height: 1.5em !important;
     flex-shrink: 0 !important;
     font-size: 20px !important;
     margin-top: 0 !important;   /* hapus offset manual */
 }
 
 footer .kontak-info i.fa-envelope {
-    margin-top: 8px !important;
+    margin-top: 0px !important;
 }
 
 
