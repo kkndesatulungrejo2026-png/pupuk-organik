@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 
     <meta charset="UTF-8">
 
-    <!-- PENTING AGAR WEBSITE PAS DI HP -->
+    <!-- Agar tampilan website menyesuaikan layar HP -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
@@ -13,20 +14,27 @@
     <meta name="keywords"
         content="pupuk organik, Desa Tulungrejo, Gandusari, Blitar, pertanian">
 
-    <meta name="author" content="KKN Desa Tulungrejo">
+    <meta name="author"
+        content="KKN Desa Tulungrejo">
 
     <title>Pupuk Organik - Desa Tulungrejo</title>
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
 
     <!-- Font Awesome -->
     <link
@@ -35,267 +43,665 @@
 
 </head>
 
+
 <body>
 
-<!-- ================= HEADER ================= -->
-<header>
 
-    <div class="logo">
-        <i class="fa-solid fa-seedling"></i>
-        Pupuk Organik
-    </div>
+    <!-- ========================================
+         HEADER
+    ========================================= -->
 
-    <nav id="nav">
-        <a href="#hero">Beranda</a>
-        <a href="#artikel">Artikel</a>
-        <a href="#tentang-pupuk">Tentang</a>
-        <a href="#kontak">Kontak</a>
-    </nav>
+    <header>
 
-    <button
-        class="menu-toggle"
-        id="menu-toggle"
-        type="button"
-        aria-label="Buka menu">
+        <!-- LOGO -->
+        <div class="logo">
 
-        <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-seedling"></i>
 
-    </button>
+            Pupuk Organik
 
-</header>
+        </div>
 
-<!-- ================= HERO ================= -->
 
-<section class="hero" id="hero">
+        <!-- NAVIGATION -->
+        <nav id="nav">
 
-    <div class="hero-text">
+            <a href="#hero">
+                Beranda
+            </a>
 
-        <h1>
-            Selamat Datang di Website Pupuk Organik
-        </h1>
+            <a href="#artikel">
+                Artikel
+            </a>
 
-        <p>
-            Website edukasi mengenai pupuk organik yang membahas
-            pengertian, manfaat, alat dan bahan, cara pembuatan,
-            serta video edukasi. Website ini dikembangkan sebagai
-            media informasi bagi masyarakat Desa Tulungrejo,
-            Kecamatan Gandusari, Kabupaten Blitar.
-        </p>
+            <a href="#tentang-pupuk">
+                Tentang
+            </a>
 
-        <a href="#tentang-pupuk" class="btn">
-            Pelajari Lebih Lanjut
-        </a>
+            <a href="#kontak">
+                Kontak
+            </a>
 
-    </div>
+        </nav>
 
-</section>
 
-<!-- ================= ARTIKEL ================= -->
+        <!-- HAMBURGER -->
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Buka menu">
 
-<section class="artikel" id="artikel">
+            <i class="fa-solid fa-bars"></i>
 
-    <h2>Artikel Kami</h2>
+        </button>
 
-<div class="artikel-grid">
+    </header>
 
-    <!-- ILMU AL-QUR'AN -->
-    <div class="card">
 
-        <img src="images/tafsir.jpg" alt="Ilmu Al-Qur'an">
 
-        <div class="content">
+    <!-- ========================================
+         HERO
+    ========================================= -->
 
-            <span class="kategori">Ilmu Al-Qur'an & Tafsir</span>
+    <section class="hero" id="hero">
 
-            <h3>Pupuk Organik dalam Perspektif Al-Qur'an</h3>
+        <div class="hero-text">
+
+            <h1>
+                Selamat Datang di Website Pupuk Organik
+            </h1>
+
 
             <p>
-                Menjelaskan ayat-ayat Al-Qur'an dan tafsir yang berkaitan
-                dengan menjaga alam serta memanfaatkan sumber daya secara bijak.
+                Website edukasi mengenai pupuk organik yang membahas
+                pengertian, manfaat, alat dan bahan, cara pembuatan,
+                serta video edukasi. Website ini dikembangkan sebagai
+                media informasi bagi masyarakat Desa Tulungrejo,
+                Kecamatan Gandusari, Kabupaten Blitar.
             </p>
 
-            <a href="ilmualqurantafsir.html" class="btn-artikel">
-                Baca Selengkapnya
+
+            <a
+                href="#tentang-pupuk"
+                class="btn">
+
+                Pelajari Lebih Lanjut
+
             </a>
 
         </div>
-</div>
 
-</section>
+    </section>
 
-<!-- ================= TENTANG ================= -->
 
-<section class="tentang">
 
-    <h2>Tentang Website</h2>
+    <!-- ========================================
+         SEARCH
+    ========================================= -->
 
-    <p>
-        Website ini merupakan media edukasi yang membahas tentang pupuk organik sebagai salah satu solusi pertanian yang ramah lingkungan dan berkelanjutan. Melalui website ini, pengunjung dapat mempelajari pengertian, manfaat, bahan-bahan, cara pembuatan, serta video edukasi mengenai pupuk organik. Selain itu, website ini juga menyajikan artikel ilmiah dari sudut pandang Ilmu Al-Qur'an dan Tafsir, yang memberikan pemahaman bahwa menjaga lingkungan dan memanfaatkan sumber daya alam secara bijaksana merupakan tanggung jawab bersama yang didukung oleh nilai-nilai keislaman. Diharapkan website ini dapat menjadi sumber informasi yang bermanfaat bagi masyarakat, mahasiswa, petani, maupun siapa saja yang ingin mengenal pentingnya penggunaan pupuk organik dalam menciptakan lingkungan yang sehat dan pertanian yang berkelanjutan.
-    </p>
+    <section class="search-box">
 
-</section>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari artikel atau materi...">
 
-<section id="tentang-pupuk">
+    </section>
 
-    <h2>Tentang Pupuk Organik</h2>
 
-    <p>
-        Pupuk organik adalah pupuk yang berasal dari bahan-bahan alami seperti sisa tanaman, kotoran hewan, kompos, dan limbah organik lainnya yang telah mengalami proses penguraian. Pupuk ini berfungsi untuk meningkatkan kesuburan tanah, memperbaiki struktur tanah, serta menjaga keseimbangan ekosistem sehingga tanaman dapat tumbuh dengan lebih sehat.
-    </p>
 
-    <h3>Apa yang akan dipelajari?</h3>
+    <!-- ========================================
+         ARTIKEL
+    ========================================= -->
 
- <div class="materi">
+    <section
+        class="artikel"
+        id="artikel">
 
-<div class="item">
+        <h2>
+            Artikel Kami
+        </h2>
 
-    <span>🌱</span>
 
-    <div>
+        <div class="artikel-grid">
 
-        <h4>Pengertian Pupuk Organik</h4>
+
+            <!-- =================================
+                 ARTIKEL ILMU AL-QUR'AN
+            ================================== -->
+
+            <div class="card">
+
+                <img
+                    src="images/tafsir.jpg"
+                    alt="Ilmu Al-Qur'an">
+
+
+                <div class="content">
+
+                    <span class="kategori">
+                        Ilmu Al-Qur'an & Tafsir
+                    </span>
+
+
+                    <h3>
+                        Pupuk Organik dalam Perspektif Al-Qur'an
+                    </h3>
+
+
+                    <p>
+                        Menjelaskan ayat-ayat Al-Qur'an dan tafsir
+                        yang berkaitan dengan menjaga alam serta
+                        memanfaatkan sumber daya secara bijak.
+                    </p>
+
+
+                    <a
+                        href="ilmualqurantafsir.html"
+                        class="btn-artikel">
+
+                        Baca Selengkapnya
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         TENTANG WEBSITE
+    ========================================= -->
+
+    <section class="tentang">
+
+        <h2>
+            Tentang Website
+        </h2>
+
 
         <p>
-            Mempelajari definisi, fungsi, dan jenis-jenis pupuk organik.
+            Website ini merupakan media edukasi yang membahas tentang
+            pupuk organik sebagai salah satu solusi pertanian yang ramah
+            lingkungan dan berkelanjutan. Melalui website ini, pengunjung
+            dapat mempelajari pengertian, manfaat, bahan-bahan, cara
+            pembuatan, serta video edukasi mengenai pupuk organik.
+
+            Selain itu, website ini juga menyajikan artikel ilmiah dari
+            sudut pandang Ilmu Al-Qur'an dan Tafsir, yang memberikan
+            pemahaman bahwa menjaga lingkungan dan memanfaatkan sumber
+            daya alam secara bijaksana merupakan tanggung jawab bersama
+            yang didukung oleh nilai-nilai keislaman.
+
+            Diharapkan website ini dapat menjadi sumber informasi yang
+            bermanfaat bagi masyarakat, mahasiswa, petani, maupun siapa
+            saja yang ingin mengenal pentingnya penggunaan pupuk organik
+            dalam menciptakan lingkungan yang sehat dan pertanian yang
+            berkelanjutan.
         </p>
 
-        <a href="pengertian.html" class="btn-materi">
-            Pelajari Materi →
-        </a>
+    </section>
 
-    </div>
 
-</div>
-     
-</a>
 
-<div class="item">
+    <!-- ========================================
+         TENTANG PUPUK ORGANIK
+    ========================================= -->
 
-    <span>🌿</span>
+    <section id="tentang-pupuk">
 
-    <div>
+        <h2>
+            Tentang Pupuk Organik
+        </h2>
 
-        <h4>Manfaat Pupuk Organik</h4>
 
         <p>
-            Menjelaskan manfaat pupuk organik bagi tanah, tanaman, dan lingkungan.
+            Pupuk organik adalah pupuk yang berasal dari bahan-bahan
+            alami seperti sisa tanaman, kotoran hewan, kompos, dan
+            limbah organik lainnya yang telah mengalami proses
+            penguraian.
+
+            Pupuk ini berfungsi untuk meningkatkan kesuburan tanah,
+            memperbaiki struktur tanah, serta menjaga keseimbangan
+            ekosistem sehingga tanaman dapat tumbuh dengan lebih sehat.
         </p>
 
 
-        <a href="manfaat.html" class="btn-materi">
-            Pelajari Materi →
-        </a>
+        <h3>
+            Apa yang akan dipelajari?
+        </h3>
 
-    </div>
 
-</a>
 
-<div class="item">
+        <!-- ====================================
+             MATERI
+        ===================================== -->
 
-    <span>🧪</span>
+        <div class="materi">
 
-    <div>
 
-        <h4>Alat dan Bahan Pembuatan</h4>
+            <!-- =================================
+                 PENGERTIAN
+            ================================== -->
+
+            <div class="item">
+
+                <span>
+                    🌱
+                </span>
+
+
+                <div>
+
+                    <h4>
+                        Pengertian Pupuk Organik
+                    </h4>
+
+
+                    <p>
+                        Mempelajari definisi, fungsi, dan jenis-jenis
+                        pupuk organik.
+                    </p>
+
+
+                    <a
+                        href="pengertian.html"
+                        class="btn-materi">
+
+                        Pelajari Materi →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 MANFAAT
+            ================================== -->
+
+            <div class="item">
+
+                <span>
+                    🌿
+                </span>
+
+
+                <div>
+
+                    <h4>
+                        Manfaat Pupuk Organik
+                    </h4>
+
+
+                    <p>
+                        Menjelaskan manfaat pupuk organik bagi tanah,
+                        tanaman, dan lingkungan.
+                    </p>
+
+
+                    <a
+                        href="manfaat.html"
+                        class="btn-materi">
+
+                        Pelajari Materi →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 ALAT DAN BAHAN
+            ================================== -->
+
+            <div class="item">
+
+                <span>
+                    🧪
+                </span>
+
+
+                <div>
+
+                    <h4>
+                        Alat dan Bahan Pembuatan
+                    </h4>
+
+
+                    <p>
+                        Mengenal alat dan bahan yang diperlukan dalam
+                        pembuatan pupuk organik.
+                    </p>
+
+
+                    <a
+                        href="alatdanbahanpembuatanpupuk.html"
+                        class="btn-materi">
+
+                        Pelajari Materi →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 CARA PEMBUATAN
+            ================================== -->
+
+            <div class="item">
+
+                <span>
+                    🛠
+                </span>
+
+
+                <div>
+
+                    <h4>
+                        Cara Membuat Pupuk Organik
+                    </h4>
+
+
+                    <p>
+                        Langkah-langkah membuat pupuk organik dari
+                        awal hingga siap digunakan.
+                    </p>
+
+
+                    <a
+                        href="carapembuatan.html"
+                        class="btn-materi">
+
+                        Pelajari Materi →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 VIDEO EDUKASI
+            ================================== -->
+
+            <div class="item">
+
+                <span>
+                    🎥
+                </span>
+
+
+                <div>
+
+                    <h4>
+                        Video Edukasi
+                    </h4>
+
+
+                    <p>
+                        Tonton video pembelajaran mengenai proses
+                        pembuatan pupuk organik.
+                    </p>
+
+
+                    <a
+                        href="videotutorial.html"
+                        class="btn-materi">
+
+                        Tonton Video →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer id="kontak">
+
+
+        <h3>
+            Pupuk Organik Indonesia
+        </h3>
+
 
         <p>
-            Mengenal alat dan bahan yang diperlukan dalam pembuatan pupuk organik.
+            Website edukasi seputar pupuk organik:
+            pengertian, manfaat, cara pembuatan,
+            hingga video tutorial.
         </p>
 
-        <a href="alatdanbahanpembuatanpupuk.html" class="btn-materi">
-            Pelajari Materi →
-        </a>
 
-    </div>
+        <!-- SOCIAL MEDIA -->
 
-</a>
+        <div class="social">
 
-<div class="item">
+            <a href="#">
 
-    <span>🛠</span>
+                <i class="fa-brands fa-facebook"></i>
 
-    <div>
+                Facebook
 
-        <h4>Cara Membuat Pupuk Organik</h4>
+            </a>
 
-        <p>
-            Langkah-langkah membuat pupuk organik dari awal hingga siap digunakan.
+
+            <a href="#">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                Instagram
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-brands fa-youtube"></i>
+
+                YouTube
+
+            </a>
+
+        </div>
+
+
+        <!-- KONTAK -->
+
+        <div class="kontak-info">
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Desa Tulungrejo, Kecamatan Gandusari,
+                Kabupaten Blitar
+            </p>
+
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                Informasi Pupuk Organik
+            </p>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <p class="copyright">
+
+            © 2026 Pupuk Organik Indonesia.
+            All Rights Reserved.
+
         </p>
 
-        <a href="carapembuatan.html" class="btn-materi">
-            Pelajari Materi →
-        </a>
-
-    </div>
-
-</a>
-
-<div class="item">
-
-    <span>🎥</span>
-
-    <div>
-
-        <h4>Video Edukasi</h4>
-
-        <p>
-            Tonton video pembelajaran mengenai proses pembuatan pupuk organik.
-        </p>
-
-        <a href="videotutorial.html" class="btn-materi">
-            Tonton Video →
-        </a>
-
-    </div>
-
-</a>
-
-</div>
-
-</section>
-<!-- ================= FOOTER ================= -->
+    </footer>
 
 
 
-<footer id="kontak">
+    <!-- ========================================
+         BACK TO TOP
+    ========================================= -->
 
-    <h3>Pupuk Organik Indonesia</h3>
+    <button
+        id="topBtn"
+        title="Kembali ke atas">
 
-    <p>
-       Website edukasi seputar pupuk organik: pengertian, manfaat, cara pembuatan, hingga video tutorial.
-    </p>
+        <i class="fa-solid fa-arrow-up"></i>
 
-<div class="social">
-    <a href="https://instagram.com/kkn_tulungrejo_1" target="_blank">
-        <i class="fa-brands fa-instagram"></i> Instagram
-    </a>
-    <a href="https://tiktok.com/@kkn2026tulungrejo1" target="_blank">
-        <i class="fa-brands fa-tiktok"></i> TikTok
-    </a>
-    <a href="https://wa.me/6285129846787" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
-    <a href="kkn.tulungrejo12026@email.com">
-        <i class="fa-solid fa-envelope"></i> Email
-    </a>
-    <a href="https://maps.app.goo.gl/AuKuTXMM9Df29ECN6" target="_blank">
-        <i class="fa-solid fa-location-dot"></i> Lokasi
-    </a>
-</div>
+    </button>
 
-    <p class="copyright">
-        © 2026 Pupuk Organik Indonesia. All Rights Reserved.
-    </p>
 
-</footer>
 
-<!-- Tombol Back To Top -->
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
 
-<button id="topBtn">
-    ↑
-</button>
+    <script>
 
-<script src="script.js"></script>
+        /* ================================
+           HAMBURGER MENU
+        ================================= */
+
+        const menuToggle =
+            document.getElementById("menu-toggle");
+
+        const nav =
+            document.getElementById("nav");
+
+
+        menuToggle.addEventListener("click", function () {
+
+            nav.classList.toggle("active");
+
+        });
+
+
+
+        /* ================================
+           TUTUP MENU SETELAH LINK DIKLIK
+        ================================= */
+
+        const navLinks =
+            document.querySelectorAll("#nav a");
+
+
+        navLinks.forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                nav.classList.remove("active");
+
+            });
+
+        });
+
+
+
+        /* ================================
+           BACK TO TOP
+        ================================= */
+
+        const topBtn =
+            document.getElementById("topBtn");
+
+
+        window.addEventListener("scroll", function () {
+
+            if (window.scrollY > 300) {
+
+                topBtn.style.display = "block";
+
+            } else {
+
+                topBtn.style.display = "none";
+
+            }
+
+        });
+
+
+        topBtn.addEventListener("click", function () {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        });
+
+
+
+        /* ================================
+           SEARCH
+        ================================= */
+
+        const searchInput =
+            document.getElementById("searchInput");
+
+        const cards =
+            document.querySelectorAll(".card");
+
+
+        searchInput.addEventListener("input", function () {
+
+            const keyword =
+                searchInput.value.toLowerCase();
+
+
+            cards.forEach(function (card) {
+
+                const text =
+                    card.textContent.toLowerCase();
+
+
+                if (text.includes(keyword)) {
+
+                    card.style.display = "";
+
+                } else {
+
+                    card.style.display = "none";
+
+                }
+
+            });
+
+        });
+
+    </script>
+
 
 </body>
+
 </html>
