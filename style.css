@@ -1423,40 +1423,29 @@ footer h3 {
 
 .kontak-info {
     display: flex;
-
     flex-direction: row;
-
-    justify-content: center;
-
+    justify-content: flex-start;   /* ganti dari center */
     align-items: center;
-
     flex-wrap: wrap;
-
     gap: 20px;
-
     font-size: 14px;
+
+    width: fit-content;            /* bungkus rapat ke konten terlebar */
+    margin-left: auto;             /* lalu center-kan sebagai satu blok */
+    margin-right: auto;
 }
 
 .kontak-info a {
     display: inline-flex;
-
     align-items: flex-start;
-
-    justify-content: center;
-
+    justify-content: flex-start;   /* ganti dari center */
     text-align: left;
-
     width: auto;
-
     max-width: 100%;
-
     font-size: 14px;
-
     line-height: 1.6;
-
     overflow-wrap: anywhere;
 }
-
 .kontak-info i {
     font-size: 20px;
 
