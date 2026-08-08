@@ -82,8 +82,13 @@ nav a:hover {
 
 .menu-toggle {
     display: none;
+    background: transparent;
+    border: none;
+    color: white;
     font-size: 28px;
     cursor: pointer;
+    padding: 5px;
+    z-index: 2000;
 }
 
 
@@ -1276,19 +1281,4 @@ footer h3 {
     .copyright {
         font-size: 13px;
     }
-}
-
-/* =========================================
-   HAMBURGER MENU - FIX MOBILE
-========================================= */
-
-.menu-toggle {
-    display: none;
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    padding: 5px;
-    z-index: 2000;
 }
