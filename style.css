@@ -1456,6 +1456,10 @@ footer h3 {
     margin-top: 2px;
 }
 
+   footer .kontak-info i.fa-envelope {
+    margin-top: 5px !important;   /* naikkan angka ini kalau masih kurang */
+}
+
 
 /* COPYRIGHT */
 
