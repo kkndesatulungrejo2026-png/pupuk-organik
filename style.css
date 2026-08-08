@@ -734,43 +734,6 @@ footer h3 {
     color: white;
 }
 
-
-@media (max-width: 768px) {
-
-    /* ---------- HEADER ---------- */
-
-    header {
-        padding: 15px 5%;
-        position: relative; /* Menjadi acuan posisi untuk nav */
-    }
-
-    nav {
-        display: none; /* Tersembunyi secara default */
-        position: absolute;
-        top: 100%; /* Menempel tepat di bawah header */
-        left: 0;
-        width: 100%;
-        background: #444930;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-        gap: 15px;
-        z-index: 9999; /* Memastikan menu berada di paling atas */
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Class aktif yang dipanggil JavaScript */
-    nav.active {
-        display: flex !important;
-    }
-
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-    }
-
-}
-
     /* ---------- HERO ---------- */
 
     .hero {
@@ -1276,11 +1239,6 @@ footer h3 {
         font-size: 13px;
     }
 }
-/* =========================
-   RESPONSIVE HP + HAMBURGER
-========================= */
-
-@media (max-width: 768px) {
 
     header {
         padding: 15px 5%;
@@ -1407,5 +1365,81 @@ footer h3 {
     .materi .item {
         width: 100%;
         max-width: 400px;
+    }
+}
+
+/* =========================
+   HAMBURGER MENU HP
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 5%;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    /* TOMBOL HAMBURGER */
+    .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 32px;
+        cursor: pointer;
+        padding: 5px;
+        z-index: 10001;
+    }
+
+    /* MENU TERSEMBUNYI */
+    header nav {
+        display: none;
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: #444930;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding: 10px 0;
+
+        gap: 0;
+
+        z-index: 10000;
+
+        box-shadow: 0 8px 15px rgba(0,0,0,.3);
+    }
+
+    /* MENU SAAT HAMBURGER DIKLIK */
+    header nav.active {
+        display: flex !important;
+    }
+
+    /* LINK MENU */
+    header nav a {
+        display: block;
+
+        width: 100%;
+
+        padding: 15px 20px;
+
+        color: white;
+
+        text-decoration: none;
+
+        text-align: center;
+    }
+
+    header nav a:hover {
+        background: rgba(255,255,255,.1);
     }
 }
