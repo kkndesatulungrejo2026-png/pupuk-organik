@@ -739,42 +739,31 @@ footer h3 {
    RESPONSIVE - TABLET & HP
 ================================================== */
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 @media (max-width: 768px) {
-
-    /* ---------- HEADER ---------- */
-
-    header {
-        padding: 15px 5%;
-    }
-
     nav {
         display: none;
-
         position: absolute;
-
-        top: 75px;
+        top: 100%; /* Pas di bawah header */
         left: 0;
-
         width: 100%;
-
         background: #444930;
-
         flex-direction: column;
-
         text-align: center;
-
         padding: 20px;
-
         gap: 15px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     }
 
     nav.active {
-        display: flex;
+        display: flex !important; /* Memastikan style tersurat dipanggil */
     }
-
-    .menu-toggle {
-        display: block;
-    }
+}
 
 
     /* ---------- HERO ---------- */
