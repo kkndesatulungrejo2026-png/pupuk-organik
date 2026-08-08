@@ -4,28 +4,33 @@ document.addEventListener("DOMContentLoaded", function () {
     const nav = document.getElementById("nav");
 
     if (!menuToggle || !nav) {
-        console.error("Hamburger atau nav tidak ditemukan!");
+        console.error("Menu hamburger atau nav tidak ditemukan!");
         return;
     }
 
-    // Klik hamburger
+    // KLIK HAMBURGER
     menuToggle.addEventListener("click", function (e) {
-        e.preventDefault();
+
         e.stopPropagation();
 
         nav.classList.toggle("active");
+
     });
 
-    // Klik link menu → tutup menu
-    nav.querySelectorAll("a").forEach(function (link) {
+    // KLIK LINK MENU
+    const navLinks = nav.querySelectorAll("a");
+
+    navLinks.forEach(function (link) {
 
         link.addEventListener("click", function () {
+
             nav.classList.remove("active");
+
         });
 
     });
 
-    // Klik di luar menu → tutup menu
+    // KLIK DI LUAR MENU
     document.addEventListener("click", function (e) {
 
         if (
@@ -33,7 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
             !nav.contains(e.target) &&
             !menuToggle.contains(e.target)
         ) {
+
             nav.classList.remove("active");
+
         }
 
     });
