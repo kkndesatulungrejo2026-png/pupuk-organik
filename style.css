@@ -735,21 +735,19 @@ footer h3 {
 }
 
 
-/* ==================================================
-   RESPONSIVE - TABLET & HP
-================================================== */
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
 @media (max-width: 768px) {
+
+    /* ---------- HEADER ---------- */
+
+    header {
+        padding: 15px 5%;
+        position: relative; /* Menjadi acuan posisi untuk nav */
+    }
+
     nav {
-        display: none;
+        display: none; /* Tersembunyi secara default */
         position: absolute;
-        top: 100%; /* Pas di bawah header */
+        top: 100%; /* Menempel tepat di bawah header */
         left: 0;
         width: 100%;
         background: #444930;
@@ -757,14 +755,21 @@ header {
         text-align: center;
         padding: 20px;
         gap: 15px;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        z-index: 9999; /* Memastikan menu berada di paling atas */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     }
 
+    /* Class aktif yang dipanggil JavaScript */
     nav.active {
-        display: flex !important; /* Memastikan style tersurat dipanggil */
+        display: flex !important;
     }
-}
 
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+}
 
     /* ---------- HERO ---------- */
 
