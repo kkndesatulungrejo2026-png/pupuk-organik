@@ -1376,3 +1376,61 @@ footer h3 {
         background: rgba(255,255,255,.1);
     }
 }
+
+/* =========================================
+   CARD MATERI - KHUSUS HP
+========================================= */
+
+@media (max-width: 768px) {
+
+    .materi {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .materi .item {
+        width: 100%;
+        max-width: none;
+
+        padding: 25px 20px;
+
+        display: flex;
+        align-items: flex-start;
+
+        gap: 15px;
+
+        box-sizing: border-box;
+
+        border-radius: 20px;
+    }
+
+    .materi .item > span {
+        font-size: 32px;
+        flex-shrink: 0;
+    }
+
+    .materi .item h4 {
+        font-size: 20px;
+        line-height: 1.4;
+
+        margin: 0 0 10px;
+    }
+
+    .materi .item p {
+        font-size: 16px;
+        line-height: 1.7;
+
+        margin: 0;
+    }
+
+    .btn-materi {
+        font-size: 15px;
+
+        padding: 12px 20px;
+
+        margin-top: 15px;
+    }
+}
