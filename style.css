@@ -525,17 +525,14 @@ nav a:hover {
     margin-top: 18px;
 
     background: #444930;
-
-    color: white;
+    color: #fff;
 
     padding: 10px 22px;
 
     border: none;
-
     border-radius: 8px;
 
     font-size: 15px;
-
     font-weight: 600;
 
     cursor: pointer;
@@ -544,16 +541,14 @@ nav a:hover {
 
     /* HILANGKAN GARIS BAWAH */
     text-decoration: none;
-
-    white-space: nowrap;
 }
 
 .btn-materi:hover {
     background: #5b6042;
-
     transform: translateY(-2px);
 
-    color: white;
+    /* Tetap tidak ada garis bawah saat disentuh */
+    text-decoration: none;
 }
 
 
@@ -1510,4 +1505,11 @@ footer h3 {
 
         line-height: 1.8;
     }
+}
+
+a.btn-materi,
+a.btn-materi:visited,
+a.btn-materi:hover,
+a.btn-materi:active {
+    text-decoration: none !important;
 }
