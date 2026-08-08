@@ -4,12 +4,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const nav = document.getElementById("nav");
 
     if (!menuToggle || !nav) {
-        console.log("Hamburger atau nav tidak ditemukan!");
         return;
     }
 
+    // Buka / tutup hamburger
     menuToggle.addEventListener("click", function () {
         nav.classList.toggle("active");
+    });
+
+    // Otomatis tutup setelah memilih menu
+    const navLinks = nav.querySelectorAll("a");
+
+    navLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+            nav.classList.remove("active");
+        });
+
     });
 
 });
