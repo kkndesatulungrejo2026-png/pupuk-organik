@@ -1277,50 +1277,50 @@ footer h3 {
     }
 }
 /* =========================
-   HAMBURGER MENU
-========================= */
-
-.menu-toggle {
-    display: none;
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-
-/* =========================
-   TAMPILAN HP
+   RESPONSIVE HP + HAMBURGER
 ========================= */
 
 @media (max-width: 768px) {
 
     header {
+        padding: 15px 5%;
         position: relative;
     }
 
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
+    /* LOGO */
+    .logo {
+        font-size: 24px;
     }
 
+    /* HAMBURGER */
+    .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 32px;
+        cursor: pointer;
+        padding: 5px;
+        z-index: 10001;
+    }
+
+    /* MENU AWALNYA TERSEMBUNYI */
     nav {
         display: none;
-
         position: absolute;
         top: 100%;
         left: 0;
-
         width: 100%;
-
         background: #444930;
-
         flex-direction: column;
-
+        text-align: center;
         padding: 10px 0;
-
-        z-index: 9999;
+        gap: 0;
+        z-index: 10000;
+        box-shadow: 0 8px 15px rgba(0,0,0,.3);
     }
 
+    /* SAAT HAMBURGER DIKLIK */
     nav.active {
         display: flex;
     }
@@ -1328,19 +1328,84 @@ footer h3 {
     nav a {
         display: block;
         width: 100%;
-
         padding: 15px 20px;
-
-        text-align: center;
-
         color: white;
         text-decoration: none;
-
-        box-sizing: border-box;
+        text-align: center;
     }
 
     nav a:hover {
-        background: rgba(255,255,255,0.1);
+        background: rgba(255,255,255,.1);
     }
 
+    /* HERO */
+    .hero {
+        min-height: 75vh;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    /* ARTIKEL */
+    .artikel {
+        width: calc(100% - 30px);
+        padding: 25px 0;
+    }
+
+    .artikel-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* TENTANG WEBSITE */
+    .tentang {
+        width: calc(100% - 30px);
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 35px 25px;
+        text-align: center;
+    }
+
+    .tentang p {
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /* TENTANG PUPUK */
+    #tentang-pupuk {
+        width: calc(100% - 30px);
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 35px 25px;
+        box-sizing: border-box;
+    }
+
+    #tentang-pupuk p {
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /* MATERI */
+    .materi {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .materi .item {
+        width: 100%;
+        max-width: 400px;
+    }
 }
