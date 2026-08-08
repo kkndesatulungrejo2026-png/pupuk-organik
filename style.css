@@ -1751,11 +1751,15 @@ footer .kontak-info i {
     align-items: center !important;
     justify-content: center !important;
 
-    width: 24px !important;      /* KUNCI: lebar box sama buat semua icon */
+    width: 24px !important;      
     flex-shrink: 0 !important;
 
     font-size: 20px !important;
-    margin-top: 2px !important;
+    margin-top: 6px !important;
+}
+
+footer .kontak-info i.fa-envelope {
+    margin-top: 6px !important;
 }
 
 
