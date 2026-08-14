@@ -23,7 +23,12 @@ body {
 }
 
 body {
-    background: #d3cbb6;
+    background: linear-gradient(
+        135deg,
+        #d3cbb6 0%,
+        #e8e4d7 50%,
+        #cdd5c0 100%
+    );
     color: #444930;
 }
 
@@ -1785,3 +1790,21 @@ footer .kontak-info i.fa-envelope {
     }
 
 }
+
+/* =========================================
+   BACKGROUND HALAMAN DOKUMENTASI
+========================================= */
+
+html,
+body {
+    background: linear-gradient(
+        135deg,
+        #d3cbb6 0%,
+        #e8e4d7 50%,
+        #cdd5c0 100%
+    ) !important;
+
+    min-height: 100%;
+}
+
+

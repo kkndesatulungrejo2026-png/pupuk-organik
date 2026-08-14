@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Artikel Kami - Pupuk Organik Desa Tulungrejo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #d3cbb6;
+            color: #444930;
+            line-height: 1.8;
+        }
+
+        /* =========================
+           SEARCH
+        ========================= */
+
+        .search-container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto 70px;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 20px 25px;
+            border-radius: 50px;
+            border: 3px solid #444930;
+            background: #fffaf2;
+            font-size: 20px;
+            color: #444930;
+            outline: none;
+        }
+
+        .search-container input::placeholder {
+            color: #777;
+        }
+
+        /* =========================
+           JUDUL
+        ========================= */
+
+        .judul-halaman {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .judul-halaman h1 {
+            font-size: 48px;
+            color: #444930;
+            margin-bottom: 10px;
+        }
+
+        .judul-halaman p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* =========================
+           CONTAINER ARTIKEL
+        ========================= */
+
+        .artikel-container {
+            width: 92%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .artikel {
+            background: #fffaf2;
+            border-radius: 25px;
+            padding: 45px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* =========================
+           JUDUL ARTIKEL
+        ========================= */
+
+        .label {
+            display: inline-block;
+            background: #444930;
+            color: white;
+            padding: 8px 22px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .artikel h2 {
+            font-size: 32px;
+            color: #444930;
+            margin-bottom: 20px;
+        }
+
+        .artikel h3 {
+            font-size: 24px;
+            color: #444930;
+            margin-top: 35px;
+            margin-bottom: 12px;
+        }
+
+        .artikel h4 {
+            font-size: 20px;
+            color: #444930;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .artikel p {
+            font-size: 17px;
+            color: #444;
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        /* =========================
+           AYAT ARAB
+        ========================= */
+
+        .ayat {
+            background: #ebe6d8;
+            border-left: 6px solid #444930;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .arab {
+            font-size: 30px;
+            line-height: 2;
+            direction: rtl;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .arti {
+            font-size: 17px;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* =========================
+           LIST
+        ========================= */
+
+        .artikel ul {
+            margin: 15px 0 20px 25px;
+        }
+
+        .artikel li {
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+
+        /* =========================
+           PEMISAH
+        ========================= */
+
+        .pemisah {
+            height: 3px;
+            background: #d3cbb6;
+            margin: 40px 0;
+            border-radius: 10px;
+        }
+
+        /* =========================
+           TOMBOL KEMBALI
+        ========================= */
+
+        .kembali-container {
+            text-align: center;
+            padding: 20px 20px 60px;
+        }
+
+        .kembali {
+            display: inline-block;
+            background: #444930;
+            color: white;
+            text-decoration: none;
+            padding: 14px 30px;
+            border-radius: 30px;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .kembali:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            .search-container {
+                width: 90%;
+                margin-bottom: 45px;
+            }
+
+            .search-container input {
+                font-size: 16px;
+                padding: 16px 20px;
+            }
+
+            .judul-halaman h1 {
+                font-size: 34px;
+            }
+
+            .artikel-container {
+                width: 94%;
+            }
+
+            .artikel {
+                padding: 25px;
+                border-radius: 18px;
+            }
+
+            .artikel h2 {
+                font-size: 26px;
+            }
+
+            .artikel h3 {
+                font-size: 21px;
+            }
+
+            .artikel p,
+            .artikel li {
+                font-size: 16px;
+            }
+
+            .arab {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         SEARCH
+    ========================== -->
+
+    <div class="search-container">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari artikel atau materi..."
+            onkeyup="cariArtikel()">
+    </div>
+
+
+    <!-- =========================
+         JUDUL HALAMAN
+    ========================== -->
+
+    <div class="judul-halaman">
+
+        <h1>Artikel Kami</h1>
+
+        <p>
+            Kumpulan kajian mengenai pupuk organik,
+            lingkungan, keluarga, dan masyarakat.
+        </p>
+
+    </div>
+
+
+    <main class="artikel-container" id="artikelContainer">
+
+
+        <!-- =====================================================
+             1. ILMU AL-QUR'AN DAN TAFSIR
+        ====================================================== -->
+
+        <article class="artikel">
+
+            <span class="label">
+                Ilmu Al-Qur'an & Tafsir
+            </span>
+
+            <h2>
+                Pupuk Organik dalam Perspektif Al-Qur'an
+            </h2>
+
+            <p>
+                Pengelolaan lingkungan merupakan salah satu bentuk
+                tanggung jawab manusia sebagai khalifah di bumi.
+                Dalam perspektif Al-Qur'an, manusia tidak hanya
+                diperintahkan untuk memanfaatkan sumber daya alam,
+                tetapi juga memiliki kewajiban untuk menjaga,
+                merawat, dan tidak melakukan kerusakan terhadap
+                lingkungan.
+            </p>
+
+            <p>
+                Dalam konteks Desa Tulungrejo, pemanfaatan limbah
+                kotoran sapi menjadi pupuk organik merupakan salah
+                satu bentuk nyata upaya memanfaatkan sumber daya
+                yang tersedia di lingkungan secara lebih bijaksana.
+                Limbah yang sebelumnya dianggap sebagai sesuatu yang
+                tidak berguna dapat diolah menjadi produk yang
+                memberikan manfaat bagi pertanian dan masyarakat.
+            </p>
+
+            <h3>
+                A. Manusia sebagai Khalifah di Bumi
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    إِنِّي جَاعِلٌ فِي الْأَرْضِ خَلِيفَةً
+                </div>
+
+                <div class="arti">
+                    “Sesungguhnya Aku hendak menjadikan seorang
+                    khalifah di bumi.”
+                </div>
+
+            </div>
+
+            <p>
+                Ayat tersebut memberikan gambaran mengenai kedudukan
+                manusia sebagai khalifah di bumi. Kedudukan tersebut
+                mengandung amanah untuk menjaga keseimbangan kehidupan
+                dan lingkungan. Manusia diberikan kemampuan untuk
+                memanfaatkan alam, namun pemanfaatan tersebut harus
+                dilakukan secara bertanggung jawab.
+            </p>
+
+            <p>
+                Pengolahan kotoran sapi menjadi pupuk organik dapat
+                dipahami sebagai salah satu bentuk implementasi
+                tanggung jawab tersebut. Limbah peternakan tidak
+                dibiarkan menumpuk dan mencemari lingkungan, tetapi
+                dimanfaatkan kembali untuk membantu meningkatkan
+                kesuburan tanah.
+            </p>
+
+            <h3>
+                B. Larangan Membuat Kerusakan di Bumi
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    وَلَا تُفْسِدُوا فِي الْأَرْضِ بَعْدَ إِصْلَاحِهَا
+                </div>
+
+                <div class="arti">
+                    “Dan janganlah kamu membuat kerusakan di muka bumi
+                    setelah Allah memperbaikinya.”
+                </div>
+
+            </div>
+
+            <p>
+                Ayat ini memberikan prinsip bahwa manusia dilarang
+                melakukan tindakan yang menyebabkan kerusakan di
+                bumi. Dalam kehidupan sehari-hari, pencemaran
+                lingkungan akibat limbah yang tidak dikelola dengan
+                baik dapat menjadi salah satu bentuk permasalahan
+                lingkungan.
+            </p>
+
+            <p>
+                Oleh karena itu, pengolahan limbah peternakan menjadi
+                pupuk organik dapat menjadi salah satu langkah untuk
+                mengurangi dampak negatif limbah terhadap lingkungan.
+                Selain mengurangi pencemaran, pengolahan tersebut juga
+                menghasilkan manfaat bagi sektor pertanian.
+            </p>
+
+            <h3>
+                C. Pemanfaatan Sumber Daya Secara Bijaksana
+            </h3>
+
+            <p>
+                Al-Qur'an memberikan landasan moral agar manusia tidak
+                melakukan tindakan berlebihan dan tidak menyia-nyiakan
+                sumber daya. Prinsip tersebut dapat diterapkan dalam
+                pengelolaan limbah melalui konsep pemanfaatan kembali
+                bahan yang masih memiliki nilai guna.
+            </p>
+
+            <p>
+                Kotoran sapi yang sebelumnya dianggap sebagai limbah
+                dapat dimanfaatkan sebagai bahan dasar pupuk organik.
+                Dengan demikian, kegiatan tersebut tidak hanya
+                memiliki nilai ekologis tetapi juga memiliki nilai
+                sosial dan ekonomi bagi masyarakat.
+            </p>
+
+            <h3>
+                D. Kesimpulan Perspektif Al-Qur'an
+            </h3>
+
+            <p>
+                Berdasarkan perspektif Al-Qur'an, menjaga lingkungan
+                dan memanfaatkan sumber daya secara bertanggung jawab
+                merupakan bagian dari amanah manusia sebagai khalifah
+                di bumi. Pengolahan limbah kotoran sapi menjadi pupuk
+                organik merupakan salah satu bentuk tindakan nyata
+                dalam mengurangi potensi kerusakan lingkungan sekaligus
+                memanfaatkan sumber daya secara produktif.
+            </p>
+
+
+            <div class="pemisah"></div>
+
+
+            <!-- =====================================================
+                 2. HUKUM KELUARGA ISLAM
+            ====================================================== -->
+
+            <span class="label">
+                Hukum Keluarga Islam
+            </span>
+
+            <h2>
+                Ekoteologi Ketahanan Keluarga
+            </h2>
+
+            <p>
+                Hukum Keluarga Islam tidak hanya membahas hubungan
+                antara anggota keluarga dalam persoalan perkawinan,
+                tetapi juga dapat dikaji melalui tanggung jawab moral
+                keluarga terhadap lingkungan. Lingkungan tempat
+                tinggal yang sehat merupakan salah satu faktor penting
+                dalam menciptakan kehidupan keluarga yang aman,
+                sehat, dan berkelanjutan.
+            </p>
+
+            <h3>
+                A. QS. Al-A'raf [7]: 56
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    وَلَا تُفْسِدُوا فِي الْأَرْضِ بَعْدَ إِصْلَاحِهَا
+                </div>
+
+                <div class="arti">
+                    “Dan janganlah kamu membuat kerusakan di muka bumi
+                    setelah Allah memperbaikinya.”
+                </div>
+
+            </div>
+
+            <p>
+                Ayat ini memiliki relevansi yang mendalam dengan
+                paradigma pengelolaan limbah domestik. Praktik
+                membuang sampah secara sembarangan, mencemari sumber
+                daya air, atau mengelola limbah rumah tangga dengan
+                cara yang tidak bertanggung jawab merupakan manifestasi
+                dari perbuatan ifsad (kerusakan) di muka bumi.
+            </p>
+
+            <p>
+                Dalam kerangka kehidupan berkeluarga, upaya menjaga
+                kebersihan dan kelestarian lingkungan hidup merupakan
+                bagian integral dari pelaksanaan amanah kekhalifahan
+                yang diemban oleh setiap individu.
+            </p>
+
+
+            <h3>
+                B. QS. Al-Baqarah [2]: 195
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    وَلَا تُلْقُوا بِأَيْدِيكُمْ إِلَى التَّهْلُكَةِ
+                </div>
+
+                <div class="arti">
+                    “Dan janganlah kamu menjatuhkan dirimu sendiri
+                    ke dalam kebinasaan.”
+                </div>
+
+            </div>
+
+            <p>
+                Ayat ini dapat dijadikan sebagai landasan normatif
+                mengenai kewajiban keluarga untuk menciptakan
+                lingkungan yang sehat dan bebas dari kontaminasi.
+                Lingkungan yang tercemar berpotensi menimbulkan
+                dampak yang mengancam kesehatan fisik dan psikis
+                seluruh anggota keluarga.
+            </p>
+
+
+            <h3>
+                C. Indikator Keluarga Berkelanjutan dalam Islam
+            </h3>
+
+            <p>
+                Konsep keluarga berkelanjutan dapat dikaji melalui
+                beberapa indikator yang menghubungkan ketahanan
+                keluarga dengan kepedulian terhadap lingkungan.
+            </p>
+
+            <ul>
+
+                <li>
+                    Penerapan zero waste
+                </li>
+
+                <li>
+                    Kesadaran lingkungan berkelanjutan
+                </li>
+
+                <li>
+                    Perencanaan keluarga dalam jangka panjang
+                </li>
+
+                <li>
+                    Ekonomi keluarga yang produktif
+                </li>
+
+                <li>
+                    Pendidikan karakter lingkungan berbasis keluarga
+                </li>
+
+            </ul>
+
+            <p>
+                Kelima indikator tersebut dapat dianalisis berdasarkan
+                prinsip keadilan, amanah, dan kemaslahatan.
+            </p>
+
+
+            <h3>
+                D. QS. Al-Hasyr [59]: 18
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ
+                    وَلْتَنْظُرْ نَفْسٌ مَا قَدَّمَتْ لِغَدٍ
+                </div>
+
+                <div class="arti">
+                    “Wahai orang-orang yang beriman! Bertakwalah
+                    kepada Allah dan hendaklah setiap orang
+                    memperhatikan apa yang telah diperbuatnya
+                    untuk hari esok.”
+                </div>
+
+            </div>
+
+            <p>
+                Ayat ini menjadi fondasi bagi prinsip perencanaan
+                jangka panjang dalam institusi keluarga. Sebuah
+                keluarga tidak hanya berorientasi pada pemenuhan
+                kebutuhan saat ini, tetapi juga perlu memperhatikan
+                dampak tindakan terhadap kesehatan, pendidikan,
+                stabilitas ekonomi, kelestarian lingkungan, dan
+                kesejahteraan generasi mendatang.
+            </p>
+
+
+            <h3>
+                E. QS. Al-Furqan [25]: 67
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    وَالَّذِينَ إِذَا أَنْفَقُوا لَمْ يُسْرِفُوا
+                    وَلَمْ يَقْتُرُوا وَكَانَ بَيْنَ ذَٰلِكَ قَوَامًا
+                </div>
+
+                <div class="arti">
+                    “Dan orang-orang yang apabila membelanjakan
+                    harta, mereka tidak berlebihan dan tidak pula
+                    kikir, tetapi berada di antara keduanya secara
+                    wajar.”
+                </div>
+
+            </div>
+
+            <p>
+                Ayat ini mendukung tata kelola ekonomi keluarga yang
+                bijaksana dan berkeadilan. Prinsip moderasi dalam
+                konsumsi dapat mendorong pengurangan pola konsumsi
+                berlebihan dan penerapan gaya hidup yang lebih
+                berkelanjutan.
+            </p>
+
+
+            <h3>
+                F. Pengelolaan Limbah Domestik dan Nafkah Keluarga
+            </h3>
+
+            <p>
+                Pengelolaan sampah rumah tangga yang baik dapat menjadi
+                bagian dari tanggung jawab keluarga dalam menjaga
+                kesehatan dan kesejahteraan anggota keluarga.
+                Pengelolaan lingkungan yang baik juga dapat mendukung
+                terciptanya tempat tinggal yang sehat.
+            </p>
+
+
+            <h3>
+                G. QS. At-Tahrim [66]: 6
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    قُوا أَنْفُسَكُمْ وَأَهْلِيكُمْ نَارًا
+                </div>
+
+                <div class="arti">
+                    “Peliharalah dirimu dan keluargamu dari api neraka.”
+                </div>
+
+            </div>
+
+            <p>
+                Dalam konteks kontemporer, makna memelihara diri dan
+                keluarga dapat dikembangkan secara tematik mencakup
+                upaya menjaga kesehatan, keselamatan, kebersihan,
+                dan kualitas lingkungan tempat tinggal keluarga.
+            </p>
+
+
+            <h3>
+                H. Hadis Nabi Muhammad SAW
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    لَا ضَرَرَ وَلَا ضِرَارَ
+                </div>
+
+                <div class="arti">
+                    “Tidak boleh membahayakan diri sendiri dan tidak
+                    boleh membahayakan orang lain.”
+                </div>
+
+            </div>
+
+            <p>
+                Hadis tersebut menjadi dasar pijakan bagi kaidah fikih
+                al-dhararu yuzal, yaitu kemudaratan harus dihilangkan.
+                Pengelolaan limbah domestik yang buruk dapat
+                menimbulkan pencemaran udara, penularan penyakit,
+                dan penurunan kualitas lingkungan.
+            </p>
+
+
+            <h3>
+                I. Ketahanan Keluarga dan Maqashid Syariah
+            </h3>
+
+            <p>
+                Program pemanfaatan limbah domestik dapat dikaitkan
+                dengan maqashid syariah, khususnya hifzh al-nafs
+                (pemeliharaan jiwa) dan hifzh al-mal
+                (pemeliharaan harta).
+            </p>
+
+            <h4>
+                Hifzh al-Nafs
+            </h4>
+
+            <p>
+                Lingkungan yang bersih dan sehat berfungsi sebagai
+                upaya preventif terhadap berbagai risiko kesehatan.
+                Dengan demikian, pengelolaan lingkungan dapat
+                berkontribusi terhadap pemeliharaan kehidupan manusia.
+            </p>
+
+            <h4>
+                Hifzh al-Mal
+            </h4>
+
+            <p>
+                Sampah organik dan anorganik yang dikelola melalui
+                pemilahan, daur ulang, dan pemanfaatan kembali dapat
+                memiliki nilai tambah ekonomi yang mendukung
+                ketahanan finansial keluarga.
+            </p>
+
+
+            <h3>
+                J. Tentang Hukum Keluarga Islam dan Lingkungan
+            </h3>
+
+            <p>
+                Hukum Keluarga Islam tidak hanya mengatur nikah,
+                talak, dan waris, tetapi juga dapat dipahami melalui
+                tanggung jawab moral keluarga terhadap lingkungan.
+                Pengelolaan limbah domestik yang baik merupakan salah
+                satu implementasi prinsip la dharara wa la dhirar
+                serta upaya menjaga keturunan melalui penyediaan
+                lingkungan yang sehat.
+            </p>
+
+            <h3>
+                K. QS. Al-Baqarah [2]: 30
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    إِنِّي جَاعِلٌ فِي الْأَرْضِ خَلِيفَةً
+                </div>
+
+                <div class="arti">
+                    “Sesungguhnya Aku hendak menjadikan seorang
+                    khalifah di bumi.”
+                </div>
+
+            </div>
+
+            <p>
+                Konsep kekhalifahan menjadi dasar teologis atas
+                tanggung jawab manusia sebagai pengelola bumi.
+                Dalam skala keluarga, amanah tersebut dapat diwujudkan
+                melalui perilaku ramah lingkungan, seperti mengurangi
+                produksi sampah, memilah limbah, menjaga sanitasi
+                rumah, dan menghindari tindakan yang mencemari
+                lingkungan sekitar.
+            </p>
+
+
+            <h3>
+                L. QS. Ar-Rum [30]: 41
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    ظَهَرَ الْفَسَادُ فِي الْبَرِّ وَالْبَحْرِ
+                    بِمَا كَسَبَتْ أَيْدِي النَّاسِ
+                </div>
+
+                <div class="arti">
+                    “Telah tampak kerusakan di darat dan di laut
+                    disebabkan karena perbuatan tangan manusia.”
+                </div>
+
+            </div>
+
+            <p>
+                Ayat ini menunjukkan hubungan antara perilaku manusia
+                dengan kerusakan lingkungan. Pola pengelolaan limbah
+                rumah tangga yang tidak bertanggung jawab merupakan
+                salah satu faktor yang dapat berkontribusi terhadap
+                pencemaran dan ketidakseimbangan ekosistem.
+            </p>
+
+
+            <h3>
+                M. Hadis tentang Kebersihan
+            </h3>
+
+            <div class="ayat">
+
+                <div class="arab">
+                    الطُّهُورُ شَطْرُ الْإِيمَانِ
+                </div>
+
+                <div class="arti">
+                    “Bersuci itu sebagian dari iman.”
+                    (HR. Muslim)
+                </div>
+
+            </div>
+
+            <p>
+                Hadis ini menjadi landasan untuk menginternalisasi
+                nilai kebersihan sebagai bagian dari kehidupan
+                keluarga Muslim. Prinsip thaharah tidak hanya
+                berkaitan dengan aspek ritual, tetapi juga dapat
+                diwujudkan dalam menjaga kebersihan lingkungan
+                dan tempat tinggal.
+            </p>
+
+
+            <div class="pemisah"></div>
+
+
+            <!-- =====================================================
+                 3. PSIKOLOGI
+            ====================================================== -->
+
+            <span class="label">
+                Psikologi
+            </span>
+
+            <h2>
+                Sosialisasi Pengolahan Limbah Kotoran Sapi
+                Menjadi Pupuk Organik
+            </h2>
+
+            <p>
+                Secara psikologis, sosialisasi pengolahan limbah
+                kotoran sapi menjadi pupuk organik di Desa Tulungrejo
+                Kecamatan Gandusari dapat dipahami sebagai proses
+                perubahan persepsi, sikap, dan perilaku masyarakat
+                terhadap limbah peternakan.
+            </p>
+
+            <p>
+                Dalam kajian psikologi sosial, sosialisasi yang
+                dilakukan secara komunikatif dan partisipatif dapat
+                meningkatkan kesadaran, pengetahuan, serta cara
+                pandang masyarakat terhadap pengelolaan limbah.
+                Dengan demikian, limbah yang semula dipersepsikan
+                sebagai masalah dapat diposisikan sebagai sumber daya
+                yang bermanfaat apabila masyarakat memiliki pemahaman
+                yang memadai.
+            </p>
+
+
+            <h3>
+                A. Aspek Kognitif
+            </h3>
+
+            <p>
+                Dari aspek kognitif, sosialisasi berfungsi menambah
+                pengetahuan masyarakat mengenai manfaat, teknik
+                pengolahan, dan nilai ekonomis pupuk organik.
+            </p>
+
+            <p>
+                Pemberian informasi yang jelas dan berulang dapat
+                membentuk dasar berpikir masyarakat dalam menerima
+                inovasi pengolahan limbah. Masyarakat yang sebelumnya
+                melihat kotoran sapi hanya sebagai limbah dapat mulai
+                memahami bahwa bahan tersebut memiliki potensi untuk
+                dimanfaatkan menjadi pupuk organik.
+            </p>
+
+
+            <h3>
+                B. Aspek Afektif
+            </h3>
+
+            <p>
+                Dari aspek afektif, sosialisasi mendorong tumbuhnya
+                sikap positif, rasa peduli, dan penerimaan terhadap
+                praktik pengolahan limbah.
+            </p>
+
+            <p>
+                Pendekatan edukatif dan pendampingan dapat memperkuat
+                sikap peduli lingkungan, rasa percaya diri, serta
+                norma sosial yang mendukung perubahan perilaku
+                masyarakat.
+            </p>
+
+            <p>
+                Perubahan sikap menjadi penting karena keberhasilan
+                program tidak hanya bergantung pada pengetahuan,
+                tetapi juga pada kesiapan emosional dan kemauan
+                masyarakat untuk terlibat.
+            </p>
+
+
+            <h3>
+                C. Aspek Konatif atau Perilaku
+            </h3>
+
+            <p>
+                Selanjutnya, dari aspek konatif atau perilaku,
+                sosialisasi mendorong masyarakat untuk melakukan
+                tindakan nyata berupa pemilahan, pengolahan, dan
+                pemanfaatan limbah menjadi pupuk organik.
+            </p>
+
+            <p>
+                Sosialisasi yang dilakukan melalui pelatihan, seminar,
+                dan pendampingan dapat meningkatkan partisipasi aktif
+                masyarakat dalam pengelolaan limbah serta membentuk
+                budaya peduli lingkungan.
+            </p>
+
+
+            <h3>
+                D. Perubahan Persepsi Masyarakat
+            </h3>
+
+            <p>
+                Salah satu perubahan psikologis yang diharapkan dari
+                kegiatan sosialisasi adalah perubahan persepsi terhadap
+                limbah. Limbah kotoran sapi tidak lagi dipandang hanya
+                sebagai sesuatu yang mengganggu atau harus dibuang,
+                tetapi dapat dipahami sebagai bahan yang memiliki
+                potensi manfaat.
+            </p>
+
+            <p>
+                Perubahan persepsi tersebut menjadi dasar bagi
+                terbentuknya sikap dan perilaku baru dalam mengelola
+                limbah.
+            </p>
+
+
+            <h3>
+                E. Motivasi dan Partisipasi Masyarakat
+            </h3>
+
+            <p>
+                Sosialisasi tidak hanya berfungsi sebagai proses
+                penyampaian informasi, tetapi juga dapat menjadi
+                intervensi psikologis yang membentuk motivasi
+                masyarakat.
+            </p>
+
+            <p>
+                Ketika masyarakat memahami manfaat ekologis,
+                pertanian, dan ekonomi dari pengolahan limbah,
+                dorongan untuk berpartisipasi dalam kegiatan tersebut
+                dapat menjadi lebih kuat.
+            </p>
+
+
+            <h3>
+                F. Kesimpulan Perspektif Psikologi
+            </h3>
+
+            <p>
+                Oleh karena itu, sosialisasi pengolahan limbah kotoran
+                sapi tidak hanya berfungsi sebagai penyampaian
+                informasi, tetapi juga sebagai proses perubahan
+                psikologis yang melibatkan aspek kognitif, afektif,
+                dan konatif.
+            </p>
+
+            <p>
+                Perubahan pengetahuan dapat menjadi dasar perubahan
+                sikap, sedangkan perubahan sikap dapat mendorong
+                terbentuknya perilaku nyata. Dengan demikian,
+                sosialisasi yang dilakukan secara berkelanjutan dapat
+                membantu membangun kebiasaan dan partisipasi
+                masyarakat dalam pengelolaan limbah secara lebih baik.
+            </p>
+
+
+        </article>
+
+    </main>
+
+
+    <!-- =========================
+         TOMBOL KEMBALI
+    ========================== -->
+
+    <div class="kembali-container">
+
+        <a href="index.html" class="kembali">
+            ← Kembali ke Beranda
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT SEARCH
+    ========================== -->
+
+    <script>
+
+        function cariArtikel() {
+
+            const input =
+                document.getElementById("searchInput")
+                .value
+                .toLowerCase();
+
+            const artikel =
+                document.querySelectorAll(".artikel");
+
+            artikel.forEach(function (item) {
+
+                const teks =
+                    item.innerText.toLowerCase();
+
+                if (teks.includes(input)) {
+
+                    item.style.display = "block";
+
+                } else {
+
+                    item.style.display = "none";
+
+                }
+
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>
