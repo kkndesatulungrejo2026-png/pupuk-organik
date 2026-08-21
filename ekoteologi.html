@@ -2,17 +2,30 @@
 <html lang="id">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Artikel Kami - Pupuk Organik Desa Tulungrejo</title>
 
+
     <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
+
+        /* =========================
+           BODY
+        ========================= */
 
         body {
             font-family: Arial, sans-serif;
@@ -22,59 +35,50 @@
         }
 
         /* =========================
-           SEARCH
-        ========================= */
-
-        .search-container {
-            width: 90%;
-            max-width: 900px;
-            margin: 30px auto 70px;
-        }
-
-        .search-container input {
-            width: 100%;
-            padding: 20px 25px;
-            border-radius: 50px;
-            border: 3px solid #444930;
-            background: #fffaf2;
-            font-size: 20px;
-            color: #444930;
-            outline: none;
-        }
-
-        .search-container input::placeholder {
-            color: #777;
-        }
-
-        /* =========================
-           JUDUL
+           JUDUL HALAMAN
         ========================= */
 
         .judul-halaman {
-            text-align: center;
-            margin-bottom: 50px;
-        }
+    text-align: center;
+    padding-top: 45px;
+    margin-bottom: 65px;
+}
 
-        .judul-halaman h1 {
-            font-size: 48px;
-            color: #444930;
-            margin-bottom: 10px;
-        }
+.judul-halaman h1 {
+    font-size: 48px;
+    color: #444930;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
 
-        .judul-halaman p {
-            font-size: 18px;
-            color: #555;
-        }
+.judul-halaman h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #444930;
+    margin: 15px auto 18px;
+    border-radius: 10px;
+}
+
+.judul-halaman p {
+    font-size: 17px;
+    color: #666;
+    max-width: 750px;
+    margin: auto;
+}
+
 
         /* =========================
            CONTAINER ARTIKEL
         ========================= */
 
         .artikel-container {
-            width: 92%;
-            max-width: 1100px;
-            margin: auto;
-        }
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+}
+
 
         .artikel {
             background: #fffaf2;
@@ -84,25 +88,39 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
 
+
         /* =========================
-           JUDUL ARTIKEL
+           LABEL ARTIKEL
         ========================= */
 
         .label {
-            display: inline-block;
-            background: #444930;
-            color: white;
-            padding: 8px 22px;
-            border-radius: 30px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+    display: inline-block;
+    background: #444930;
+    color: white;
+    padding: 9px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 12px rgba(68, 73, 48, 0.15);
+}
+
+
+        /* =========================
+           JUDUL ARTIKEL
+        ========================= */
 
         .artikel h2 {
             font-size: 32px;
             color: #444930;
             margin-bottom: 20px;
+            line-height: 1.4;
+            position: relative;
+            padding-left: 18px;
+            border-left: 5px solid #444930;
         }
+
 
         .artikel h3 {
             font-size: 24px;
@@ -111,6 +129,7 @@
             margin-bottom: 12px;
         }
 
+
         .artikel h4 {
             font-size: 20px;
             color: #444930;
@@ -118,12 +137,18 @@
             margin-bottom: 10px;
         }
 
+
+        /* =========================
+           PARAGRAF
+        ========================= */
+
         .artikel p {
             font-size: 17px;
             color: #444;
             margin-bottom: 18px;
             text-align: justify;
         }
+
 
         /* =========================
            AYAT ARAB
@@ -138,19 +163,41 @@
             text-align: center;
         }
 
+
         .arab {
             font-size: 30px;
             line-height: 2;
             direction: rtl;
             color: #333;
             margin-bottom: 15px;
+            font-family: "Times New Roman", serif;
         }
+
 
         .arti {
             font-size: 17px;
             font-style: italic;
             color: #555;
         }
+
+
+        /* =========================
+           HIGHLIGHT
+        ========================= */
+
+        .highlight {
+            background: #ebe6d8;
+            border-left: 6px solid #444930;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin: 25px 0;
+        }
+
+
+        .highlight p {
+            margin-bottom: 0;
+        }
+
 
         /* =========================
            LIST
@@ -160,10 +207,29 @@
             margin: 15px 0 20px 25px;
         }
 
-        .artikel li {
-            margin-bottom: 10px;
-            font-size: 17px;
+
+        .artikel ol {
+            margin: 15px 0 20px 25px;
         }
+
+
+        .artikel li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            color: #444;
+        }
+
+
+        /* =========================
+        CATATAN KKN
+        ========================= */
+
+        .artikel > p:first-of-type {
+            color: #777;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
 
         /* =========================
            PEMISAH
@@ -176,6 +242,30 @@
             border-radius: 10px;
         }
 
+
+        /* =========================
+           DAFTAR PUSTAKA
+        ========================= */
+
+        .referensi {
+            background: #ebe6d8;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 25px;
+        }
+
+
+        .referensi ol {
+            margin: 0 0 0 25px;
+        }
+
+
+        .referensi li {
+            margin-bottom: 14px;
+            font-size: 16px;
+        }
+
+
         /* =========================
            TOMBOL KEMBALI
         ========================= */
@@ -184,6 +274,7 @@
             text-align: center;
             padding: 20px 20px 60px;
         }
+
 
         .kembali {
             display: inline-block;
@@ -197,10 +288,12 @@
             transition: 0.3s;
         }
 
+
         .kembali:hover {
             transform: translateY(-3px);
             opacity: 0.9;
         }
+
 
         /* =========================
            RESPONSIVE
@@ -208,62 +301,73 @@
 
         @media (max-width: 768px) {
 
-            .search-container {
-                width: 90%;
-                margin-bottom: 45px;
-            }
-
-            .search-container input {
-                font-size: 16px;
-                padding: 16px 20px;
-            }
 
             .judul-halaman h1 {
                 font-size: 34px;
             }
 
+
+            .judul-halaman p {
+                font-size: 15px;
+                padding: 0 15px;
+            }
+
+
             .artikel-container {
                 width: 94%;
             }
+
 
             .artikel {
                 padding: 25px;
                 border-radius: 18px;
             }
 
+
             .artikel h2 {
                 font-size: 26px;
             }
 
+
             .artikel h3 {
                 font-size: 21px;
             }
+
 
             .artikel p,
             .artikel li {
                 font-size: 16px;
             }
 
+
             .arab {
                 font-size: 24px;
+                line-height: 2;
             }
+
+
+            .arti {
+                font-size: 15px;
+            }
+
+
+            .referensi {
+                padding: 20px;
+            }
+
+
+            .referensi li {
+                font-size: 14px;
+            }
+
         }
+
     </style>
+
 </head>
 
+
 <body>
-
-    <!-- =========================
-         SEARCH
-    ========================== -->
-
-    <div class="search-container">
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Cari artikel atau materi..."
-            onkeyup="cariArtikel()">
-    </div>
 
 
     <!-- =========================
@@ -272,7 +376,9 @@
 
     <div class="judul-halaman">
 
-        <h1>Artikel Kami</h1>
+        <h1>
+            Artikel Kami
+        </h1>
 
         <p>
             Kumpulan kajian mengenai pupuk organik,
@@ -282,11 +388,16 @@
     </div>
 
 
+
+    <!-- =========================
+         ARTIKEL
+    ========================== -->
+
     <main class="artikel-container" id="artikelContainer">
 
 
         <!-- =====================================================
-             1. ILMU AL-QUR'AN DAN TAFSIR
+             ILMU AL-QUR'AN DAN TAFSIR
         ====================================================== -->
 
         <article class="artikel">
@@ -295,139 +406,535 @@
                 Ilmu Al-Qur'an & Tafsir
             </span>
 
+
             <h2>
-                Pupuk Organik dalam Perspektif Al-Qur'an
+                Pandangan Surat Al-A'raf Ayat 58
+                tentang Pupuk Organik dari Kotoran Sapi
             </h2>
 
-            <p>
-                Pengelolaan lingkungan merupakan salah satu bentuk
-                tanggung jawab manusia sebagai khalifah di bumi.
-                Dalam perspektif Al-Qur'an, manusia tidak hanya
-                diperintahkan untuk memanfaatkan sumber daya alam,
-                tetapi juga memiliki kewajiban untuk menjaga,
-                merawat, dan tidak melakukan kerusakan terhadap
-                lingkungan.
-            </p>
 
             <p>
-                Dalam konteks Desa Tulungrejo, pemanfaatan limbah
-                kotoran sapi menjadi pupuk organik merupakan salah
-                satu bentuk nyata upaya memanfaatkan sumber daya
-                yang tersedia di lingkungan secara lebih bijaksana.
-                Limbah yang sebelumnya dianggap sebagai sesuatu yang
-                tidak berguna dapat diolah menjadi produk yang
-                memberikan manfaat bagi pertanian dan masyarakat.
+                <em>
+                    Catatan dari KKN di Desa Tulungrejo,
+                    Kecamatan Gandusari, Kabupaten Blitar
+                </em>
             </p>
+
+
+
+            <!-- =========================
+                 KETIKA BERKAH
+            ========================== -->
 
             <h3>
-                A. Manusia sebagai Khalifah di Bumi
+                Ketika Berkah Justru Mencemari
             </h3>
+
+
+            <p>
+                Desa Tulungrejo adalah desa yang kaya. Mayoritas warganya
+                menggantungkan hidup dari dua sektor yang saling melengkapi:
+                peternakan sapi perah dan pertanian. Setiap pagi dan sore,
+                susu segar mengalir dari kandang-kandang warga, dan setiap
+                musim tanam, sawah-sawah menghijau menanti panen.
+            </p>
+
+
+            <p>
+                Namun di balik kelimpahan itu, ada satu persoalan yang selama
+                ini dianggap "biasa": kotoran sapi. Setiap hari, limbah kotoran
+                dari ratusan ekor sapi perah dibuang begitu saja ke sungai.
+                Akibatnya, air sungai berubah warna, aroma tak sedap menyelimuti
+                pemukiman, dan potensi pencemaran lingkungan pun meningkat.
+            </p>
+
+
+            <p>
+                Padahal, apa yang dianggap sebagai "limbah" ini sesungguhnya
+                menyimpan berkah yang belum dimanfaatkan.
+            </p>
+
+
+            <div class="highlight">
+
+                <p>
+                    Dari sinilah program KKN kami bermula: mengajak peternak
+                    dan petani Tulungrejo untuk melihat kotoran sapi bukan
+                    sebagai masalah, melainkan sebagai peluang — sekaligus
+                    mengajak masyarakat merenungkan kembali pesan Al-Qur'an
+                    tentang tanah dan kesuburan.
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 AL-A'RAF AYAT 58
+            ========================== -->
+
+            <h3>
+                Apa Kata Surat Al-A'raf Ayat 58?
+            </h3>
+
+
+            <p>
+                Allah SWT berfirman dalam Surat Al-A'raf ayat 58:
+            </p>
+
 
             <div class="ayat">
 
                 <div class="arab">
-                    إِنِّي جَاعِلٌ فِي الْأَرْضِ خَلِيفَةً
+
+                    وَالْبَلَدُ الطَّيِّبُ يَخْرُجُ نَبَاتُهُ بِإِذْنِ رَبِّهِ ۖ
+                    وَالَّذِي خَبُثَ لَا يَخْرُجُ إِلَّا نَكِدًا ۚ
+                    كَذَٰلِكَ نُصَرِّفُ الْآيَاتِ لِقَوْمٍ يَشْكُرُونَ
+
                 </div>
 
+
                 <div class="arti">
-                    “Sesungguhnya Aku hendak menjadikan seorang
-                    khalifah di bumi.”
+
+                    "Dan tanah yang baik, tanaman-tanamannya tumbuh subur
+                    dengan izin Tuhan; dan tanah yang buruk, tanaman-tanamannya
+                    yang tumbuh merana. Demikianlah Kami menjelaskan berulang-ulang
+                    tanda-tanda (kebesaran Kami) bagi orang-orang yang bersyukur."
+
                 </div>
+
+
+                <p style="text-align: center; margin-top: 15px;">
+                    <strong>
+                        (QS. Al-A'raf: 58)
+                    </strong>
+                </p>
 
             </div>
 
-            <p>
-                Ayat tersebut memberikan gambaran mengenai kedudukan
-                manusia sebagai khalifah di bumi. Kedudukan tersebut
-                mengandung amanah untuk menjaga keseimbangan kehidupan
-                dan lingkungan. Manusia diberikan kemampuan untuk
-                memanfaatkan alam, namun pemanfaatan tersebut harus
-                dilakukan secara bertanggung jawab.
-            </p>
+
 
             <p>
-                Pengolahan kotoran sapi menjadi pupuk organik dapat
-                dipahami sebagai salah satu bentuk implementasi
-                tanggung jawab tersebut. Limbah peternakan tidak
-                dibiarkan menumpuk dan mencemari lingkungan, tetapi
-                dimanfaatkan kembali untuk membantu meningkatkan
+                Secara zahir, para mufasir seperti dalam Tafsir Ath-Thabari
+                menjelaskan ayat ini sebagai gambaran dua jenis tanah di muka
+                bumi: tanah subur yang cepat merespons air hujan dan menumbuhkan
+                tanaman dengan baik, serta tanah tandus yang meski disiram
+                hujan lebat tetap sulit menumbuhkan sesuatu yang bermanfaat.
+            </p>
+
+
+            <p>
+                Perumpamaan ini kemudian ditarik pada dua tipe manusia —
+                mereka yang hatinya subur menerima kebenaran, dan mereka yang
+                hatinya keras menolaknya.
+            </p>
+
+
+            <p>
+                Sementara itu, kitab tafsir
+                <strong>
+                    Al-Jawahir fi Tafsir al-Qur'an al-Karim
+                </strong>
+                karya Thanthawi Jauhari dikenal karena pendekatannya yang
+                memadukan pesan spiritual Al-Qur'an dengan ilmu pengetahuan
+                alam, termasuk ilmu pertanian dan kesuburan tanah.
+            </p>
+
+
+            <p>
+                Melalui pendekatan tafsir 'ilmi semacam ini, ayat tentang
+                "tanah yang baik" dapat dibaca tidak hanya sebagai perumpamaan
+                spiritual, tetapi juga sebagai isyarat nyata bahwa Allah
+                menciptakan hukum sebab-akibat di alam: tanah yang diberi
+                asupan hara yang cukup — salah satunya dari bahan organik
+                seperti kotoran ternak — akan menghasilkan tanaman yang subur,
+                sedangkan tanah yang dibiarkan miskin unsur hara akan sulit
+                berproduksi.
+            </p>
+
+
+            <p>
+                Pendekatan membaca ayat lintas tema seperti ini sejalan dengan
+                apa yang dijelaskan Abdul Hayy al-Farmawi dalam karyanya tentang
+                metode tafsir maudhu'i (tafsir tematik).
+            </p>
+
+
+            <p>
+                Menurut metode ini, untuk memahami pesan Al-Qur'an secara utuh
+                tentang suatu tema — misalnya kesuburan tanah dan tanggung jawab
+                manusia menjaga lingkungan — seorang pengkaji perlu menghimpun
+                ayat-ayat yang relevan dan membacanya secara terpadu, bukan
+                sepotong-sepotong.
+            </p>
+
+
+            <p>
+                Dengan cara ini, ayat 58 Surat Al-A'raf dapat dikaitkan dengan
+                ayat-ayat lain tentang larangan berbuat kerusakan di bumi
+                (<em>fasad fi al-ardh</em>), sehingga pesannya menjadi utuh:
+                manusia diperintahkan menjaga dan mengolah tanah, bukan
+                mencemarinya.
+            </p>
+
+
+
+            <!-- =========================
+                 ANDALUSIA
+            ========================== -->
+
+            <h3>
+                Jejak Ilmu Pertanian dari Andalusia
+            </h3>
+
+
+            <p>
+                Menariknya, semangat memuliakan tanah dan memanfaatkan bahan
+                organik ini juga pernah mencapai puncaknya pada masa
+                <em>Islamic Golden Age</em> di Andalusia (Spanyol Islam).
+                Pada masa itu, lahir sejumlah karya besar tentang ilmu
+                pertanian (<em>'ilm al-filaha</em>) yang menjadi rujukan dunia
+                selama berabad-abad.
+            </p>
+
+
+            <p>
+                Di antaranya adalah
+                <strong>
+                    Kitab al-Filaha
+                </strong>
+                karya Ibnu al-'Awwam al-Isybili (abad ke-12 M), sebuah
+                ensiklopedia pertanian yang membahas secara rinci teknik
+                pengolahan tanah, jenis-jenis pupuk, termasuk pupuk kandang,
+                hingga cara menyuburkan lahan yang tandus.
+            </p>
+
+
+            <p>
+                Ada pula
+                <strong>
+                    Kitab al-Qasd wa al-Bayan
+                </strong>
+                karya Ibnu Bassal dan
+                <strong>
+                    Al-Muqni' fi al-Filahah
+                </strong>
+                karya Ibnu al-Hajjaj al-Isybili, yang sama-sama menekankan
+                pentingnya pengelolaan tanah secara ilmiah agar hasil
+                pertanian melimpah.
+            </p>
+
+
+            <p>
+                Para ilmuwan Muslim Andalusia saat itu sudah memahami bahwa
+                kotoran hewan yang diolah dengan baik dapat mengembalikan
+                kesuburan tanah — sebuah pengetahuan yang kini kita kenal
+                sebagai pupuk organik atau kompos.
+            </p>
+
+
+            <p>
+                Ini menunjukkan bahwa perhatian umat Islam terhadap pertanian
+                ramah lingkungan bukanlah hal baru, melainkan warisan
+                keilmuan yang panjang, yang sayangnya sering terlupakan
+                oleh generasi sekarang.
+            </p>
+
+
+
+            <!-- =========================
+                 HUKUM KOTORAN SAPI
+            ========================== -->
+
+            <h3>
+                Bagaimana dengan Hukum Kotoran Sapi sebagai Pupuk?
+            </h3>
+
+
+            <p>
+                Dalam kajian fikih, kotoran hewan memang tergolong najis.
+                Namun para ulama, baik klasik maupun kontemporer, sepakat
+                bahwa status najis tidak serta-merta membuat sesuatu haram
+                untuk dimanfaatkan.
+            </p>
+
+
+            <p>
+                Selama tidak digunakan untuk hal-hal yang mensyaratkan
+                kesucian (seperti bersuci atau dikonsumsi langsung),
+                pemanfaatan kotoran sapi sebagai pupuk maupun bahan baku
+                biogas dibolehkan karena memiliki manfaat nyata bagi
                 kesuburan tanah.
             </p>
 
-            <h3>
-                B. Larangan Membuat Kerusakan di Bumi
-            </h3>
 
-            <div class="ayat">
+            <p>
+                Kajian fikih kontemporer bahkan memperluas pembahasan ini
+                dengan memasukkan prinsip
+                <em>hifzh al-bi'ah</em>
+                (menjaga kelestarian lingkungan) sebagai bagian dari
+                <em>maqashid syariah</em> — tujuan-tujuan besar syariat Islam.
+            </p>
 
-                <div class="arab">
-                    وَلَا تُفْسِدُوا فِي الْأَرْضِ بَعْدَ إِصْلَاحِهَا
-                </div>
 
-                <div class="arti">
-                    “Dan janganlah kamu membuat kerusakan di muka bumi
-                    setelah Allah memperbaikinya.”
-                </div>
+            <div class="highlight">
+
+                <p>
+                    Mengolah limbah kotoran ternak agar tidak mencemari
+                    sungai bukan sekadar solusi teknis, tetapi juga wujud
+                    nyata ketaatan menjaga lingkungan yang diperintahkan agama.
+                </p>
 
             </div>
 
-            <p>
-                Ayat ini memberikan prinsip bahwa manusia dilarang
-                melakukan tindakan yang menyebabkan kerusakan di
-                bumi. Dalam kehidupan sehari-hari, pencemaran
-                lingkungan akibat limbah yang tidak dikelola dengan
-                baik dapat menjadi salah satu bentuk permasalahan
-                lingkungan.
-            </p>
 
-            <p>
-                Oleh karena itu, pengolahan limbah peternakan menjadi
-                pupuk organik dapat menjadi salah satu langkah untuk
-                mengurangi dampak negatif limbah terhadap lingkungan.
-                Selain mengurangi pencemaran, pengolahan tersebut juga
-                menghasilkan manfaat bagi sektor pertanian.
-            </p>
+
+            <!-- =========================
+                 MASALAH MENJADI PELUANG
+            ========================== -->
 
             <h3>
-                C. Pemanfaatan Sumber Daya Secara Bijaksana
+                Dari Masalah Menjadi Peluang Bersama
             </h3>
 
-            <p>
-                Al-Qur'an memberikan landasan moral agar manusia tidak
-                melakukan tindakan berlebihan dan tidak menyia-nyiakan
-                sumber daya. Prinsip tersebut dapat diterapkan dalam
-                pengelolaan limbah melalui konsep pemanfaatan kembali
-                bahan yang masih memiliki nilai guna.
-            </p>
 
             <p>
-                Kotoran sapi yang sebelumnya dianggap sebagai limbah
-                dapat dimanfaatkan sebagai bahan dasar pupuk organik.
-                Dengan demikian, kegiatan tersebut tidak hanya
-                memiliki nilai ekologis tetapi juga memiliki nilai
-                sosial dan ekonomi bagi masyarakat.
+                Bertolak dari pemahaman ini, program KKN kami mengajak
+                peternak dan petani Tulungrejo untuk berhenti membuang
+                kotoran sapi ke sungai, dan mulai mengolahnya bersama
+                menjadi pupuk organik.
             </p>
+
+
+            <p>
+                Kotoran yang selama ini menjadi sumber pencemaran dan
+                bau tak sedap, diarahkan menjadi bahan baku yang bernilai
+                ekonomi.
+            </p>
+
+
+            <p>
+                Langkah ini sekaligus membuka ruang kerja sama baru antara
+                peternak dan petani: peternak menyediakan bahan baku,
+                petani mengolah dan memanfaatkannya untuk lahan mereka,
+                dan hasil olahan yang berlebih dapat dijual sebagai produk
+                pupuk organik desa.
+            </p>
+
+
+            <p>
+                Dari sinilah potensi usaha mandiri warga Tulungrejo dapat
+                tumbuh.
+            </p>
+
+
+
+            <!-- =========================
+                 EMPAT TUJUAN
+            ========================== -->
 
             <h3>
-                D. Kesimpulan Perspektif Al-Qur'an
+                Empat Tujuan yang Kami Bawa
             </h3>
 
+
             <p>
-                Berdasarkan perspektif Al-Qur'an, menjaga lingkungan
-                dan memanfaatkan sumber daya secara bertanggung jawab
-                merupakan bagian dari amanah manusia sebagai khalifah
-                di bumi. Pengolahan limbah kotoran sapi menjadi pupuk
-                organik merupakan salah satu bentuk tindakan nyata
-                dalam mengurangi potensi kerusakan lingkungan sekaligus
-                memanfaatkan sumber daya secara produktif.
+                Melalui program ini, ada empat hal yang ingin kami
+                tumbuhkan bersama masyarakat Tulungrejo:
             </p>
+
+
+            <ol>
+
+                <li>
+                    <strong>
+                        Meningkatkan spiritualitas masyarakat
+                    </strong>,
+                    dengan mengembalikan pemahaman bahwa mengolah tanah
+                    dan menjaga bumi adalah bagian dari ibadah.
+                </li>
+
+
+                <li>
+                    <strong>
+                        Menumbuhkan kesadaran dan ketakwaan
+                    </strong>,
+                    bahwa menjaga sungai dari pencemaran adalah bentuk
+                    tanggung jawab kepada Allah dan sesama.
+                </li>
+
+
+                <li>
+                    <strong>
+                        Menanamkan cinta lingkungan
+                    </strong>
+                    serta mengurangi ketergantungan pada pupuk kimia
+                    yang lambat laun dapat merusak kesuburan tanah
+                    jangka panjang.
+                </li>
+
+
+                <li>
+                    <strong>
+                        Membuka usaha mandiri
+                    </strong>,
+                    yaitu produk pupuk organik berbasis kotoran sapi,
+                    sebagai sumber ekonomi baru bagi warga desa.
+                </li>
+
+            </ol>
+
+
+
+            <!-- =========================
+                 PENUTUP
+            ========================== -->
+
+            <div class="highlight">
+
+                <p>
+                    Sungai yang bersih, tanah yang subur, dan warga yang
+                    sejahtera — semua itu bisa dimulai dari langkah sederhana:
+                    memandang kembali kotoran sapi bukan sebagai limbah,
+                    melainkan sebagai berkah yang menanti untuk diolah.
+                </p>
+
+            </div>
+
 
 
             <div class="pemisah"></div>
 
+
+
+            <!-- =========================
+                 DAFTAR PUSTAKA
+            ========================== -->
+
+            <h3>
+                Daftar Pustaka
+            </h3>
+
+
+            <div class="referensi">
+
+                <ol>
+
+                    <li>
+                        Ath-Thabari, Abu Ja'far Muhammad bin Jarir.
+                        <em>
+                            Tafsir Ath-Thabari
+                            (Jami' al-Bayan 'an Ta'wil Ay al-Qur'an)
+                        </em>.
+                    </li>
+
+
+                    <li>
+                        Thanthawi Jauhari.
+                        <em>
+                            Al-Jawahir fi Tafsir al-Qur'an al-Karim
+                        </em>.
+                    </li>
+
+
+                    <li>
+                        Al-Farmawi, Abdul Hayy.
+                        <em>
+                            Al-Bidayah fi al-Tafsir al-Maudhu'i
+                        </em>
+                        (1977), diterjemahkan sebagai
+                        <em>
+                            Metode Tafsir Maudhu'i dan Cara Penerapannya
+                        </em>,
+                        terj. Suryan A. Jamrah.
+                        Jakarta: PT Raja Grafindo, 1996/2002.
+                    </li>
+
+
+                    <li>
+                        Ibnu al-'Awwam al-Isybili.
+                        <em>
+                            Kitab al-Filaha
+                        </em>
+                        (abad ke-12 M).
+                    </li>
+
+
+                    <li>
+                        Ibnu Bassal.
+                        <em>
+                            Kitab al-Qasd wa al-Bayan
+                        </em>.
+                    </li>
+
+
+                    <li>
+                        Ibnu al-Hajjaj al-Isybili.
+                        <em>
+                            Al-Muqni' fi al-Filahah
+                        </em>.
+                    </li>
+
+
+                    <li>
+                        An-Nawawi, Muhyiddin.
+                        <em>
+                            Raudhatul Thalibin
+                        </em>.
+                        Beirut: Maktab Islami, 1991.
+                    </li>
+
+
+                    <li>
+                        Az-Zuhaili, Wahbah.
+                        <em>
+                            Al-Fiqh al-Islami wa Adillatuhu
+                        </em>.
+                        Beirut: Darul Fikr, 1985.
+                    </li>
+
+
+                    <li>
+                        NU Online.
+                        "Hukum Jual Beli Kotoran Ayam untuk Pupuk Organik."
+                        <em>
+                            islam.nu.or.id
+                        </em>.
+                    </li>
+
+
+                    <li>
+                        Rumaysho.com.
+                        "Hukum Pupuk dari Kotoran Hewan."
+                    </li>
+
+
+                    <li>
+                        Jurnal Ilmiah Ekonomi Islam (JIEI),
+                        Vol. 12 No. 1 (2026).
+                        "Pemanfaatan Kotoran Sapi dalam Perspektif Hukum Islam."
+                    </li>
+
+
+                    <li>
+                        Al-Qalam: Jurnal Kajian Islam dan Pendidikan
+                        (2025–2026).
+                        "Fiqih Lingkungan dan Ekologi Islam";
+                        termasuk rujukan Fatwa Majelis Ulama Indonesia
+                        No. 30 Tahun 2016 tentang Hukum Pembakaran Hutan
+                        dan Lahan.
+                    </li>
+
+                </ol>
+
+            </div>
+
+
         </article>
 
+
     </main>
+
 
 
     <!-- =========================
@@ -443,6 +950,7 @@
     </div>
 
 
+
     <!-- =========================
          JAVASCRIPT SEARCH
     ========================== -->
@@ -452,17 +960,21 @@
         function cariArtikel() {
 
             const input =
-                document.getElementById("searchInput")
-                .value
-                .toLowerCase();
+                document
+                    .getElementById("searchInput")
+                    .value
+                    .toLowerCase();
+
 
             const artikel =
                 document.querySelectorAll(".artikel");
+
 
             artikel.forEach(function (item) {
 
                 const teks =
                     item.innerText.toLowerCase();
+
 
                 if (teks.includes(input)) {
 
@@ -480,5 +992,8 @@
 
     </script>
 
+
 </body>
+
 </html>
+```

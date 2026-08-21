@@ -52,7 +52,7 @@ header {
     top: 0;
     z-index: 1000;
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
+    box-shadow: none;
 }
 
 
@@ -77,7 +77,7 @@ header {
 
 
 /* =========================================================
-   NAVIGATION
+   NAVIGATION DESKTOP
 ========================================================= */
 
 nav {
@@ -89,9 +89,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-
     font-weight: 500;
-
     transition: .3s;
 }
 
@@ -127,47 +125,58 @@ nav a:hover {
 ========================================================= */
 
 .hero {
-    min-height: 85vh;
+    min-height: 82vh;
 
     background:
         linear-gradient(
-            rgba(68, 73, 48, .75),
-            rgba(68, 73, 48, .75)
+            rgba(68, 73, 48, 0.45),
+            rgba(68, 73, 48, 0.65)
         ),
-        url("image/desa-tulungrejo.jpeg");
+        url("./image/desa-tulungrejo.jpeg");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     text-align: center;
 
     color: white;
 
-    padding: 50px 20px;
+    padding: 130px 20px 80px;
+
+    position: relative;
 }
 
 .hero-text {
+    max-width: 900px;
     width: 100%;
-    max-width: 850px;
+    margin: 0 auto;
 }
 
 .hero h1 {
     font-size: 55px;
-    line-height: 1.25;
+    line-height: 1.2;
+    margin-bottom: 25px;
 
-    margin-bottom: 20px;
+    text-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .hero p {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 20px;
+    max-width: 750px;
+    margin: 0 auto 30px;
+
+    font-size: 19px;
     line-height: 1.8;
-    text-align: justify;
+
+    text-align: center;
+
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 
@@ -178,26 +187,33 @@ nav a:hover {
 .btn {
     display: inline-block;
 
-    margin-top: 25px;
+    background: #d3cbb6;
+    color: #444930;
 
-    padding: 15px 40px;
-
-    background: white;
-    color: #2563eb;
-
-    text-decoration: none;
+    padding: 14px 30px;
 
     border-radius: 50px;
 
-    font-size: 20px;
-    font-weight: bold;
+    text-decoration: none;
 
-    transition: .3s;
+    font-weight: 700;
+    font-size: 16px;
+
+    margin-top: 10px;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-    background: #2563eb;
-    color: white;
+    transform: translateY(-3px);
+
+    background: white;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -207,7 +223,6 @@ nav a:hover {
 
 .search-box {
     padding: 40px;
-
     text-align: center;
 }
 
@@ -224,7 +239,8 @@ nav a:hover {
 
     outline: none;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, .15);
 
     font-size: 16px;
 }
@@ -236,9 +252,7 @@ nav a:hover {
 
 .artikel {
     width: 90%;
-
     margin: auto;
-
     padding: 30px 0;
 }
 
@@ -270,7 +284,7 @@ nav a:hover {
     border-radius: 15px;
 
     box-shadow:
-        0 10px 20px rgba(0, 0, 0, .1);
+        0 10px 20px rgba(0, .1, 0, 0);
 
     overflow: hidden;
 
@@ -313,7 +327,6 @@ nav a:hover {
 
 .content p {
     line-height: 1.8;
-
     color: #555;
 }
 
@@ -409,13 +422,11 @@ nav a:hover {
 
 #tentang-pupuk h2 {
     color: #444930;
-
     margin-bottom: 20px;
 }
 
 #tentang-pupuk h3 {
     margin-top: 30px;
-
     color: #333;
 }
 
@@ -425,7 +436,6 @@ nav a:hover {
 
 #tentang-pupuk ul {
     margin-top: 20px;
-
     padding-left: 25px;
 }
 
@@ -450,9 +460,6 @@ nav a:hover {
 
     width: 100%;
 }
-
-
-/* ITEM */
 
 .materi .item {
     display: flex;
@@ -490,13 +497,11 @@ nav a:hover {
 
 .materi .item > span {
     font-size: 35px;
-
     flex-shrink: 0;
 }
 
 .materi .item > div {
     flex: 1;
-
     min-width: 0;
 }
 
@@ -558,7 +563,8 @@ nav a:hover {
 a.btn-materi,
 a.btn-materi:visited,
 a.btn-materi:hover,
-a.btn-materi:active {
+a.btn-materi:active,
+a.btn-materi:focus {
     text-decoration: none !important;
 }
 
@@ -632,7 +638,6 @@ footer h3 {
 
 .social a:hover {
     color: #22c55e;
-
     transform: translateY(-4px);
 }
 
@@ -643,14 +648,22 @@ footer h3 {
 
 .kontak-info {
     margin-top: 25px;
+
     display: flex;
+
     flex-direction: column;
-    align-items: flex-start;   
-    width: fit-content;        
-    margin-left: auto;         
+
+    align-items: flex-start;
+
+    width: fit-content;
+
+    margin-left: auto;
     margin-right: auto;
+
     gap: 18px;
+
     line-height: 1.7;
+
     font-size: 17px;
 }
 
@@ -676,7 +689,6 @@ footer h3 {
 
 .kontak-info a:hover {
     color: #22c55e;
-
     transform: translateY(-2px);
 }
 
@@ -716,11 +728,9 @@ footer h3 {
     position: fixed;
 
     right: 25px;
-
     bottom: 25px;
 
     width: 50px;
-
     height: 50px;
 
     border: none;
@@ -754,13 +764,11 @@ footer h3 {
 
 .dark {
     background: #111827;
-
     color: white;
 }
 
 .dark .card {
     background: #1f2937;
-
     color: white;
 }
 
@@ -770,7 +778,6 @@ footer h3 {
 
 .dark .search-box input {
     background: #374151;
-
     color: white;
 }
 
@@ -830,7 +837,6 @@ footer h3 {
 
 .artikel-detail ul {
     padding-left: 25px;
-
     margin-bottom: 10px;
 }
 
@@ -858,7 +864,6 @@ footer h3 {
 
 .btn-kembali:hover {
     color: #5d6242;
-
     padding-left: 5px;
 }
 
@@ -893,16 +898,16 @@ footer h3 {
 
 @media (max-width: 768px) {
 
-    /* -------------------------
+    /* =====================================================
        HEADER HP
-    ------------------------- */
+    ===================================================== */
 
     header {
         width: 100%;
 
-        padding: 14px 20px;
-
         min-height: 70px;
+
+        padding: 14px 20px;
 
         display: flex;
 
@@ -915,10 +920,14 @@ footer h3 {
         top: 0;
 
         z-index: 10000;
+
+        margin: 0;
+        border: 0;
+        box-shadow: none;
     }
 
 
-    /* LOGO HP */
+    /* LOGO */
 
     .logo {
         display: flex;
@@ -939,17 +948,17 @@ footer h3 {
     }
 
 
-    /* HAMBURGER HP */
+    /* =====================================================
+       HAMBURGER
+    ===================================================== */
 
     .menu-toggle {
         display: flex;
 
         align-items: center;
-
         justify-content: center;
 
         width: 45px;
-
         height: 45px;
 
         padding: 0;
@@ -965,10 +974,14 @@ footer h3 {
         font-size: 28px;
 
         cursor: pointer;
+
+        z-index: 2000;
     }
 
 
-    /* NAV HP */
+    /* =====================================================
+       NAV MOBILE
+    ===================================================== */
 
     header nav {
         display: none;
@@ -976,7 +989,6 @@ footer h3 {
         position: absolute;
 
         top: 100%;
-
         left: 0;
 
         width: 100%;
@@ -994,9 +1006,6 @@ footer h3 {
         box-shadow:
             0 8px 15px rgba(0, 0, 0, .3);
     }
-
-
-    /* MENU AKTIF */
 
     header nav.active {
         display: flex;
@@ -1023,49 +1032,87 @@ footer h3 {
     }
 
 
-    /* -------------------------
+    /* =====================================================
        HERO HP
-    ------------------------- */
+    ===================================================== */
 
-    .hero {
-        min-height: 75vh;
+.hero {
+    min-height: 78vh;
 
-        padding: 50px 20px;
-    }
+    margin-top: 0;
+
+    border: none;
+
+    padding: 70px 20px 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background-image:
+        linear-gradient(
+            rgba(68, 73, 48, 0.45),
+            rgba(68, 73, 48, 0.65)
+        ),
+        url("./image/desa-tulungrejo.jpeg");
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+}
 
     .hero-text {
         width: 100%;
+
+        max-width: 100%;
+
+        margin: 0 auto;
     }
 
     .hero h1 {
         font-size: 32px;
 
-        line-height: 1.3;
+        line-height: 1.25;
 
         margin-bottom: 20px;
+
+        text-shadow:
+            0 3px 10px rgba(0, 0, 0, 0.45);
     }
 
     .hero p {
-        font-size: 16px;
+        max-width: 100%;
+
+        font-size: 15px;
 
         line-height: 1.7;
+
+        margin: 0 auto 25px;
+
+        text-align: center;
+
+        text-shadow:
+            0 2px 8px rgba(0, 0, 0, 0.4);
     }
-
-
-    /* -------------------------
-       BUTTON HERO
-    ------------------------- */
 
     .btn {
-        font-size: 16px;
+        font-size: 15px;
 
-        padding: 13px 28px;
+        padding: 13px 25px;
     }
 
 
-    /* -------------------------
+    /* =====================================================
        SEARCH
-    ------------------------- */
+    ===================================================== */
 
     .search-box {
         padding: 30px 15px;
@@ -1080,9 +1127,9 @@ footer h3 {
     }
 
 
-    /* -------------------------
+    /* =====================================================
        ARTIKEL
-    ------------------------- */
+    ===================================================== */
 
     .artikel {
         width: calc(100% - 30px);
@@ -1127,9 +1174,9 @@ footer h3 {
     }
 
 
-    /* -------------------------
+    /* =====================================================
        TENTANG WEBSITE
-    ------------------------- */
+    ===================================================== */
 
     .tentang {
         width: calc(100% - 30px);
@@ -1166,9 +1213,9 @@ footer h3 {
     }
 
 
-    /* -------------------------
+    /* =====================================================
        TENTANG PUPUK
-    ------------------------- */
+    ===================================================== */
 
     #tentang-pupuk {
         width: calc(100% - 30px);
@@ -1180,8 +1227,6 @@ footer h3 {
         padding: 35px 25px;
 
         border-radius: 25px;
-
-        overflow: visible;
     }
 
     #tentang-pupuk h2 {
@@ -1250,8 +1295,6 @@ footer h3 {
 
         padding: 25px 20px;
 
-        box-sizing: border-box;
-
         border-radius: 22px;
 
         background: white;
@@ -1297,9 +1340,6 @@ footer h3 {
         overflow-wrap: break-word;
     }
 
-
-    /* BUTTON MATERI HP */
-
     .materi .item .btn-materi {
         display: inline-block;
 
@@ -1332,14 +1372,12 @@ footer h3 {
         background: #5b6042;
 
         color: white;
-
-        text-decoration: none;
     }
 
 
-    /* -------------------------
+    /* =====================================================
        ARTIKEL DETAIL
-    ------------------------- */
+    ===================================================== */
 
     .artikel-detail {
         width: calc(100% - 30px);
@@ -1374,110 +1412,140 @@ footer h3 {
 
 
     /* =====================================================
-   FOOTER HP
-===================================================== */
+       FOOTER HP
+    ===================================================== */
 
-footer {
-    padding: 40px 15px;
-    margin-top: 50px;
-}
+    footer {
+        padding: 40px 15px;
 
-footer h3 {
-    font-size: 23px;
-    line-height: 1.4;
-}
+        margin-top: 50px;
+    }
 
+    footer h3 {
+        font-size: 23px;
 
-/* SOSMED TETAP SEJAJAR */
-
-.social {
-    display: flex;
-
-    flex-direction: row;
-
-    justify-content: center;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    gap: 22px;
-
-    margin: 30px 0 35px;
-}
-
-.social a {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    margin: 0;
-
-    font-size: 16px;
-}
-
-.social a i {
-    font-size: 23px;
-}
+        line-height: 1.4;
+    }
 
 
-/* LOKASI + EMAIL */
+    /* SOCIAL MEDIA */
 
-.kontak-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;   /* ganti dari center */
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-size: 14px;
+    footer .social {
+        display: flex;
 
-    width: fit-content;            /* bungkus rapat ke konten terlebar */
-    margin-left: auto;             /* lalu center-kan sebagai satu blok */
-    margin-right: auto;
-}
+        flex-direction: row;
 
-.kontak-info a {
-    display: inline-flex;
-    align-items: flex-start;
-    justify-content: flex-start;   /* ganti dari center */
-    text-align: left;
-    width: auto;
-    max-width: 100%;
-    font-size: 14px;
-    line-height: 1.6;
-    overflow-wrap: anywhere;
-}
-.kontak-info i {
-    font-size: 20px;
+        justify-content: center;
 
-    width: auto;
+        align-items: center;
 
-    flex-shrink: 0;
+        flex-wrap: wrap;
 
-    margin-top: 2px;
-}
+        gap: 18px;
 
-   footer .kontak-info i.fa-envelope {
-    margin-top: 5px !important;   /* naikkan angka ini kalau masih kurang */
-}
+        margin: 25px 0 30px;
+    }
+
+    footer .social a {
+        display: inline-flex;
+
+        align-items: center;
+
+        width: auto;
+
+        margin: 0;
+
+        font-size: 15px;
+    }
+
+    footer .social a i {
+        font-size: 22px;
+    }
 
 
-/* COPYRIGHT */
+    /* KONTAK */
 
-.copyright {
-    font-size: 12px;
+    footer .kontak-info {
+        display: flex;
 
-    line-height: 1.6;
+        flex-direction: column;
 
-    margin-top: 30px;
-}
+        align-items: flex-start;
 
-    /* -------------------------
-       BACK TO TOP
-    ------------------------- */
+        justify-content: center;
+
+        gap: 18px;
+
+        width: fit-content;
+
+        max-width: 90%;
+
+        margin: 0 auto;
+    }
+
+    footer .kontak-info a {
+        display: inline-flex;
+
+        flex-direction: row;
+
+        align-items: flex-start;
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+        width: auto;
+
+        max-width: 100%;
+
+        margin: 0;
+
+        gap: 12px;
+
+        font-size: 14px;
+
+        line-height: 1.5;
+
+        text-decoration: none;
+
+        overflow-wrap: anywhere;
+    }
+
+    footer .kontak-info i {
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        width: 24px;
+
+        height: 1.5em;
+
+        flex-shrink: 0;
+
+        font-size: 20px;
+
+        margin-top: 0;
+    }
+
+    footer .kontak-info i.fa-envelope {
+        margin-top: 0;
+    }
+
+
+    /* COPYRIGHT */
+
+    .copyright {
+        font-size: 12px;
+
+        line-height: 1.6;
+
+        margin-top: 30px;
+    }
+
+
+    /* BACK TO TOP */
 
     #topBtn {
         right: 15px;
@@ -1498,16 +1566,19 @@ footer h3 {
 @media (max-width: 480px) {
 
     header {
-        padding: 13px 16px;
-    }
+    height: 70px;
+    min-height: 70px;
+    padding: 13px 16px;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+}
 
 
     /* LOGO */
 
     .logo {
         font-size: 20px;
-
-        white-space: nowrap;
     }
 
     .logo i {
@@ -1530,22 +1601,45 @@ footer h3 {
 
     /* HERO */
 
-    .hero {
-        min-height: 75vh;
+   .hero {
+    min-height: 78vh;
 
-        padding: 40px 18px;
-    }
+    padding: 80px 18px 60px;
+
+    background-image:
+        linear-gradient(
+            rgba(68, 73, 48, 0.45),
+            rgba(68, 73, 48, 0.65)
+        ),
+        url("./image/desa-tulungrejo.jpeg");
+
+    background-position: center center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
 
     .hero h1 {
         font-size: 30px;
 
-        line-height: 1.3;
+        line-height: 1.25;
+
+        margin-bottom: 18px;
     }
 
     .hero p {
         font-size: 15px;
 
         line-height: 1.7;
+
+        margin-bottom: 25px;
     }
 
 
@@ -1667,15 +1761,15 @@ footer h3 {
         font-size: 22px;
     }
 
-    .social a {
+    footer .social a {
         font-size: 16px;
     }
 
-    .social a i {
+    footer .social a i {
         font-size: 23px;
     }
 
-    .kontak-info a {
+    footer .kontak-info a {
         font-size: 14px;
     }
 
@@ -1686,113 +1780,8 @@ footer h3 {
 
 
 /* =========================================================
-   BUTTON MATERI - HILANGKAN GARIS BAWAH
+   BACKGROUND HALAMAN
 ========================================================= */
-
-a.btn-materi,
-a.btn-materi:visited,
-a.btn-materi:hover,
-a.btn-materi:active,
-a.btn-materi:focus {
-    text-decoration: none !important;
-}
-
-/* =========================================================
-   FIX FOOTER SOSMED SEJAJAR
-========================================================= */
-
-footer .social {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    gap: 18px !important;
-    margin: 25px 0 30px !important;
-}
-
-footer .social a {
-    display: inline-flex !important;
-    align-items: center !important;
-    width: auto !important;
-    margin: 0 !important;
-    font-size: 15px !important;
-}
-
-footer .social a i {
-    font-size: 22px !important;
-}
-
-
-/* LOKASI + EMAIL */
-
-footer .kontak-info {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    justify-content: center !important;
-    gap: 18px !important;
-    width: fit-content !important;
-    max-width: 90% !important;
-    margin: 0 auto !important;
-}
-
-footer .kontak-info a {
-    display: inline-flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;   /* ganti dari flex-start */
-    text-align: left !important;
-    width: auto !important;
-    margin: 0 !important;
-    gap: 12px !important;
-    text-decoration: none !important;
-    line-height: 1.5 !important;
-}
-
-footer .kontak-info i {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 24px !important;
-    height: 1.5em !important;
-    flex-shrink: 0 !important;
-    font-size: 20px !important;
-    margin-top: 0 !important;   /* hapus offset manual */
-}
-
-footer .kontak-info i.fa-envelope {
-    margin-top: 0px !important;
-}
-
-
-/* HP */
-
-@media (max-width: 768px) {
-
-    footer .social {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: center !important;
-        align-items: center !important;
-        flex-wrap: wrap !important;
-        gap: 18px !important;
-    }
-
-    footer .social a {
-        width: auto !important;
-        margin: 0 !important;
-        font-size: 15px;
-    }
-
-    footer .social a i {
-        font-size: 22px;
-    }
-
-}
-
-/* =========================================
-   BACKGROUND HALAMAN DOKUMENTASI
-========================================= */
 
 html,
 body {
@@ -1805,5 +1794,4 @@ body {
 
     min-height: 100%;
 }
-
 
