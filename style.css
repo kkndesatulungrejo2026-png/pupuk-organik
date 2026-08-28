@@ -1807,3 +1807,32 @@ body {
     display: block;
     border-radius:ghhv 10px;
 }
+/* ================================
+   RESPONSIVE SOSIAL MEDIA - HP
+================================ */
+
+@media (max-width: 768px) {
+
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .social-links i {
+        font-size: 25px;
+    }
+
+}
