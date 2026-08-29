@@ -1137,11 +1137,14 @@ footer h3 {
         padding: 25px 0;
     }
 
-    .artikel h2 {
-        font-size: 30px;
-
-        margin-bottom: 30px;
-    }
+   .artikel-detail h2 {
+    color: #444930;
+    font-size: 28px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding-left: 0;
+    border-left: none;
+}
 
     .artikel-grid {
         grid-template-columns: 1fr;
@@ -1392,15 +1395,21 @@ footer h3 {
     }
 
     .artikel-detail h1 {
-        font-size: 26px;
-
-        line-height: 1.4;
+        font-size: 30px;
+        color: #444930;
+        margin-bottom: 15px;
+        padding-left: 0;
+        border-left: none;
     }
 
-    .artikel-detail h2 {
-        font-size: 20px;
-
-        line-height: 1.4;
+   .artikel-detail h2 {
+    color: #444930;
+    font-size: 28px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding-left: 0;
+    border-left: none;
+}
     }
 
     .artikel-detail p,
@@ -1556,7 +1565,7 @@ footer h3 {
 
         height: 45px;
     }
-}
+
 
 
 /* =========================================================
@@ -1835,4 +1844,68 @@ body {
         font-size: 25px;
     }
 
+}
+
+/* =========================================================
+   GAMBAR CARA PEMBUATAN
+========================================================= */
+
+.gambar-pembuatan {
+    width: 70%;
+    max-width: 650px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.gambar-pembuatan img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.gambar-pembuatan .caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+/* =========================================================
+   PERBAIKAN CARA PEMBUATAN
+========================================================= */
+
+/* Hilangkan semua garis pada judul */
+.artikel-detail h1,
+.artikel-detail h2 {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border: none !important;
+    padding-left: 0 !important;
+}
+
+
+/* Ukuran gambar */
+.gambar-pembuatan {
+    width: 65%;
+    max-width: 650px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.gambar-pembuatan img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.gambar-pembuatan .caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
 }
