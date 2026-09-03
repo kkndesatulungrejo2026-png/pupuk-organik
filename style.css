@@ -1847,31 +1847,6 @@ body {
 }
 
 /* =========================================================
-   GAMBAR CARA PEMBUATAN
-========================================================= */
-
-.gambar-pembuatan {
-    width: 70%;
-    max-width: 650px;
-    margin: 30px auto;
-    text-align: center;
-}
-
-.gambar-pembuatan img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-.gambar-pembuatan .caption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
-}
-/* =========================================================
    PERBAIKAN CARA PEMBUATAN
 ========================================================= */
 
@@ -1921,7 +1896,26 @@ body {
     padding-left: 0 !important;
 }
 
-/* Tampilan HP */
+/* =========================================================
+   GAMBAR ARTIKEL FULL KIRI - KANAN
+========================================================= */
+
+.artikel-detail img {
+    width: calc(100% + 40px) !important;
+    max-width: none !important;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 15px;
+}
+
+
+/* =========================================================
+   TAMPILAN HP
+========================================================= */
+
 @media (max-width: 768px) {
 
     .artikel-detail {
@@ -1965,10 +1959,22 @@ body {
     .btn-kembali {
         font-size: 14px;
     }
+
+    /* GAMBAR DI HP */
+    .artikel-detail img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 15px 0;
+    }
 }
 
 
-/* HP kecil */
+/* =========================================================
+   HP KECIL
+========================================================= */
+
+/* HP KECIL */
 @media (max-width: 480px) {
 
     .artikel-detail {
@@ -1987,5 +1993,73 @@ body {
     .artikel-detail p,
     .artikel-detail li {
         font-size: 14px;
+    }
+
+    /* GAMBAR FULL */
+    .artikel-detail img {
+        width: calc(100% + 34px) !important;
+        max-width: none !important;
+        margin-left: -17px;
+        margin-right: -17px;
+    }
+}
+   /* =========================================================
+   GAMBAR CARA PEMBUATAN FULL
+========================================================= */
+
+.gambar-pembuatan {
+    width: calc(100% + 100px) !important;
+    max-width: none !important;
+    margin: 30px -50px !important;
+    text-align: center;
+}
+
+.gambar-pembuatan img {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto;
+    display: block;
+    margin: 0 !important;
+    border-radius: 15px;
+}
+
+
+/* =========================================================
+   HP
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .gambar-pembuatan {
+        width: calc(100% + 40px) !important;
+        max-width: none !important;
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .gambar-pembuatan img {
+        width: 100% !important;
+        max-width: none !important;
+    }
+}
+
+
+/* =========================================================
+   HP KECIL
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .gambar-pembuatan {
+        width: calc(100% + 36px) !important;
+        margin-left: -18px !important;
+        margin-right: -18px !important;
+    }
+
+    .gambar-pembuatan img {
+        width: 100% !important;
+        max-width: none !important;
     }
 }
